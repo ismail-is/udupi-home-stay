@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/udupi-home-stay/static/css/main.3b0a58c0.css",
-    "main.js": "/udupi-home-stay/static/js/main.9797041c.js",
+    "main.js": "/udupi-home-stay/static/js/main.747bbc2e.js",
     "static/js/787.884f7618.chunk.js": "/udupi-home-stay/static/js/787.884f7618.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/udupi-home-stay/static/media/fontawesome-webfont.ed6298903ae1554c7f3e.svg",
     "static/media/themify.svg?-fvbane": "/udupi-home-stay/static/media/themify.f0fc8c798eac5636249c.svg",
@@ -41,11 +41,11 @@
     "static/media/slick.woff": "/udupi-home-stay/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/udupi-home-stay/index.html",
     "main.3b0a58c0.css.map": "/udupi-home-stay/static/css/main.3b0a58c0.css.map",
-    "main.9797041c.js.map": "/udupi-home-stay/static/js/main.9797041c.js.map",
+    "main.747bbc2e.js.map": "/udupi-home-stay/static/js/main.747bbc2e.js.map",
     "787.884f7618.chunk.js.map": "/udupi-home-stay/static/js/787.884f7618.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b0a58c0.css",
-    "static/js/main.9797041c.js"
+    "static/js/main.747bbc2e.js"
   ]
 }
