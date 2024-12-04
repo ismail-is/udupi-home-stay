@@ -1,7 +1,7 @@
 {
   "name": "arkio-react",
   "version": "0.1.0",
-  "homepage": "https://ismail.github.io/udupi-home-stay",
+  "homepage": "https://ismail-is.github.io/udupi-home-stay",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -43,7 +43,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -62,5 +62,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
