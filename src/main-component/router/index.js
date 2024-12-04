@@ -38,9 +38,9 @@ const AllRoute = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='/udupi-home-stay'>
         <Routes >
-          <Route exact path='/udupi-home-stay' element={<Homepage/>} />
+          <Route exact path='/' element={<Homepage/>} />
           <Route path='home' element={<Homepage/>} />
           <Route path='home2' element={<Homepage2/>} />
           <Route path='home3' element={<Homepage3/>} />
