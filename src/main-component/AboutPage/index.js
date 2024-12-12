@@ -10,7 +10,8 @@ import TeamSection from '../../components/TeamSection';
 import Testimonial from '../../components/Testimonial';
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
-import Logo from '../../images/logo.svg'
+import Logo from '../../images/allimg/greenlogo.webp'
+// import Logo from '../../images/logo.svg'
 import abimg from '../../images/about.jpg'
 
 
@@ -19,13 +20,15 @@ const AboutPage =() => {
         <Fragment>
             <Navbar Logo={Logo}/>
             <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
-            <About abimg={abimg}/>
-            <ProjectSection/>
-            <ServiceSection/>
+            {/* <About abimg={abimg}/> */}
+            <About abClass={'wpo-about-area-s5'} abimg={abimg}/>
+            {/* <ProjectSection/> */}
+            {/* <ServiceSection/> */}
             <FunFact fnClass={'wpo-fun-fact-section-s2'}/>
-            <Pricing/>
-            <TeamSection/>
-            <Testimonial/>
+            {/* <Pricing/> */}
+            {/* <TeamSection/> */}
+            <About abimg={abimg}/>
+            {/* <Testimonial/> */}
             <Footer ftClass={'wpo-site-footer-s2'}/>
             <Scrollbar/>
         </Fragment>

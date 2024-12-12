@@ -424,7 +424,7 @@ const CheckoutSection = ({cartList}) => {
                             </Grid>
                             <Grid className="cuponWrap checkoutCard">
                                 <Button className="collapseBtn" fullWidth onClick={() => faqHandler('payment')}>
-                                    Payment Method
+                                    Payment Methods
                                     <FontAwesome name={tabs.payment ? 'minus' : 'plus'}/>
                                 </Button>
                                 <Grid className="chCardBody">

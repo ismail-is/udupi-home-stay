@@ -41,7 +41,7 @@ const Header = (props) => {
                                 <div id="navbar" className="collapse navbar-collapse navigation-holder">
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
-                                        <li className="menu-item-has-children">
+                                        {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/">Home</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/home">Home Style 1</Link></li>
@@ -50,25 +50,30 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/home4">Home Style 4</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home5">Home Style 5</Link></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
+                                        <li><Link onClick={ClickHandler} to="/">Home</Link></li>
                                         <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                        <li className="menu-item-has-children">
+                                        {/* <li className="menu-item-has-children">
                                             <Link to="/service">Service</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/service">Service</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/service-s2">Service S2</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/service-single/1">Service Single</Link></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/project">Project</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/project">Project</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-s2">Project S2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/project-single/1">Project Single</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="menu-item-has-children">
+                                                <Link onClick={ClickHandler} to="/project">Home Stays </Link>
+                                                <ul className="sub-menu">
+                                                    <li><Link onClick={ClickHandler} to="/Whitehouse">WHITE HOUSE</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/GardenVilla">GARDEN VILLA</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/CottageHouse">COTTAGE HOUSE</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/TopVilla">HILL TOP VILLA</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/SunriseHome">SUNRISE HOME</Link></li>
+                                                    {/* <li><Link onClick={ClickHandler} to="/project-s2">Project S2</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/project-single/1">Project Single</Link></li> */}
+                                                </ul>
+                                            </li>
+                                        {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/blog">Blog</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
@@ -86,8 +91,8 @@ const Header = (props) => {
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li className="menu-item-has-children">
+                                        </li> */}
+                                        {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/">Pages</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
@@ -101,12 +106,13 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/login">Login</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
+                                        <li><Link onClick={ClickHandler} to="/Catering">Catering </Link></li>
                                         <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-2 col-2">
+                            {/* <div className="col-lg-3 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
@@ -171,7 +177,7 @@ const Header = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </nav>

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link}  from 'react-router-dom'
-import Logo from '../../images/logo-2.svg'
+import Logo from '../../images/allimg/udpi.webp'
+// import Logo from '../../images/logo-2.svg'
 import Projects from '../../api/project'
 
 
@@ -24,6 +25,11 @@ const Footer = (props) =>{
                             <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Viverra laoreet ultrices
                                 donec placerat commodo elementum justo, consequat.</p>
                             <ul>
+                            <li>
+                                    <Link onClick={ClickHandler} to="/">
+                                        <i className="ti-instagram"></i>
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link onClick={ClickHandler} to="/">
                                         <i className="ti-facebook"></i>
@@ -31,17 +37,13 @@ const Footer = (props) =>{
                                 </li>
                                 <li>
                                     <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-twitter-alt"></i>
+                                        <i className="ti-youtube"></i>
                                     </Link>
                                 </li>
+                                
                                 <li>
                                     <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-instagram"></i>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-google"></i>
+                                        <i className="ti-email"></i>
                                     </Link>
                                 </li>
                             </ul>
@@ -50,14 +52,14 @@ const Footer = (props) =>{
                     <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
                         <div className="widget link-widget">
                             <div className="widget-title">
-                                <h3>Our Services</h3>
+                                <h3>Important Links </h3>
                             </div>
                             <ul>
-                                <li><Link onClick={ClickHandler} to="/service-single">Perfect Planning</Link></li>
-                                <li><Link onClick={ClickHandler} to="/service-single">Profesional Design</Link></li>
-                                <li><Link onClick={ClickHandler} to="/service-single">Best Interior</Link></li>
-                                <li><Link onClick={ClickHandler} to="/service-single">Modern Furniture</Link></li>
-                                <li><Link onClick={ClickHandler} to="/service-single">Complete Decoration</Link></li>
+                                <li><Link onClick={ClickHandler} to="/service-single">Home</Link></li>
+                                <li><Link onClick={ClickHandler} to="/service-single">About Us</Link></li>
+                                <li><Link onClick={ClickHandler} to="/service-single">Home Stays </Link></li>
+                                {/* <li><Link onClick={ClickHandler} to="/service-single">Catering </Link></li> */}
+                                <li><Link onClick={ClickHandler} to="/service-single">Contact</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -68,11 +70,16 @@ const Footer = (props) =>{
                             </div>
                             <div className="contact-ft">
                                 <ul>
-                                    <li><i className="fi flaticon-location"></i>68D, Belsion Town 2365 <br/> Fna city, LH
-                                        3656, USA</li>
-                                    <li><i className="fi flaticon-telephone"></i>+ 8 (123) 123 456 789 <br/>
-                                        + 8 (123) 123 456 789</li>
-                                    <li><i className="fi flaticon-email"></i>arkio@gmail.com</li>
+                                    <li><i className="fi flaticon-location"></i>H.No. 4-4-95, Bhaghat  <br/> Singh Marg,Udupi 576101 </li>
+                                    <li><i className="fi flaticon-telephone"></i> <a href='https://wa.me/918971220576 ' style={{color:"#FFFFF8"}}>+91 89712 20576  </a><br/>
+                                    <a href='tel:+9180501 23132 ' style={{color:"#FFFFF8"}}>+91 80501 23132  </a> </li>
+                                     
+                                           
+
+
+                                    <li><i className="fi flaticon-email"></i><a href='mailto:fahad@udupistay.com' style={{color:"#FFFFF8"}}>fahad@udupistay.com</a><br/>
+                                    <a href='mailto:asif@udupistay.com' style={{color:"#FFFFF8"}}>asif@udupistay.com</a></li>
+                                 
                                 </ul>
                             </div>
                         </div>
@@ -98,9 +105,8 @@ const Footer = (props) =>{
                 <div className="row">
                     <div className="col col-xs-12">
                         <ul>
-                            <li>&copy; 2022 Arkio Template. Design By <Link onClick={ClickHandler} to="/">wpOceans</Link>. All Rights
-                                Reserved.</li>
-                            <li><Link onClick={ClickHandler} to="/">Terms of use |</Link> <Link onClick={ClickHandler} to="/">Privacy Environmental Policy</Link></li>
+                            <li>&copy; 2024 udupistay. Design By <Link to="https://brightmedia.tech/" target='blank'>Bright Media </Link></li>
+                            {/* <li><Link onClick={ClickHandler} to="/">Terms of use |</Link> <Link onClick={ClickHandler} to="/">Privacy Environmental Policy</Link></li> */}
                         </ul>
                     </div>
                 </div>

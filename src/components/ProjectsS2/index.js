@@ -26,6 +26,7 @@ const ProjectSectionS2 = () => {
                                                     <div className="wpo-project-img">
                                                         <img src={project.pImg} alt="" />
                                                         <div className="left-border"></div>
+                                                        {/* <div className="left-border1">lo</div> */}
                                                         <div className="right-border"></div>
                                                     </div>
                                                     <div className="wpo-project-text">

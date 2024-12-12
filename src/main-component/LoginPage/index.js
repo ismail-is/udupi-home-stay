@@ -66,7 +66,7 @@ const LoginPage = (props) => {
                 <p>Sign in to your account</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
-                        <Grid item xs={12}>
+                        <Grid item xs={6}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
@@ -83,7 +83,7 @@ const LoginPage = (props) => {
                             />
                             {validator.message('email', value.email, 'required|email')}
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={6}>
                             <TextField
                                 className="inputOutline"
                                 fullWidth
@@ -91,7 +91,7 @@ const LoginPage = (props) => {
                                 value={value.password}
                                 variant="outlined"
                                 name="password"
-                                type="password"
+                                type="date"
                                 label="Password"
                                 InputLabelProps={{
                                     shrink: true,
@@ -102,13 +102,13 @@ const LoginPage = (props) => {
                             {validator.message('password', value.password, 'required')}
                         </Grid>
                         <Grid item xs={12}>
-                            <Grid className="formAction">
+                            {/* <Grid className="formAction">
                                 <FormControlLabel
                                     control={<Checkbox checked={value.remember} onChange={rememberHandler}/>}
                                     label="Remember Me"
                                 />
                                 <Link to="/forgot-password">Forgot Password?</Link>
-                            </Grid>
+                            </Grid> */}
                             <Grid className="formFooter">
                                 <Button fullWidth className="cBtnTheme" type="submit">Login</Button>
                             </Grid>

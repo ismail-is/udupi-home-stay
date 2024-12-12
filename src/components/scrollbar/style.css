@@ -6,7 +6,7 @@ ul.smothscroll {
     z-index: 99;
 }
 ul.smothscroll a {
-    background-color: rgba(202, 171, 6, 0.7);
+    background-color: #99B02C;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -16,10 +16,10 @@ ul.smothscroll a {
     color: #fff;
     background-size: 200%,1px;
     background-position: 0;
-    border: 2px solid #CAAB06;
+    border: 2px solid #323231;
 }
 ul.smothscroll a:hover {
-    background-color: #CAAB06;
+    background-color: #8fa423;
     color: #fff;
 }
 

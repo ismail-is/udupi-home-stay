@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Logo from '../../images/logo-2.svg'
+import Logo from '../../images/allimg/udpi.webp'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../../components/MobileMenu'
 import Projects from '../../api/project'
@@ -42,14 +42,14 @@ export default class Header2 extends Component {
                                 <div className="col-lg-2 col-md-6 col-6">
                                     <div className="navbar-header">
                                         <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={Logo}
-                                            alt="" /></Link>
+                                            alt=""  /></Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-9 col-md-1 col-1">
                                     <div id="navbar" className="collapse navbar-collapse navigation-holder">
                                         <button className="menu-close"><i className="ti-close"></i></button>
                                         <ul className="nav navbar-nav mb-2 mb-lg-0">
-                                            <li className="menu-item-has-children">
+                                            {/* <li className="menu-item-has-children">
                                                 <Link onClick={ClickHandler} to="/">Home</Link>
                                                 <ul className="sub-menu">
                                                     <li><Link onClick={ClickHandler} to="/home">Home Style 1</Link></li>
@@ -58,25 +58,30 @@ export default class Header2 extends Component {
                                                     <li><Link onClick={ClickHandler} to="/home4">Home Style 4</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/home5">Home Style 5</Link></li>
                                                 </ul>
-                                            </li>
+                                            </li> */}
+                                            <li><Link onClick={ClickHandler} to="/">Home</Link></li>
                                             <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                            <li className="menu-item-has-children">
+                                            {/* <li className="menu-item-has-children">
                                                 <Link to="/service">Service</Link>
                                                 <ul className="sub-menu">
                                                     <li><Link onClick={ClickHandler} to="/service">Service</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/service-s2">Service S2</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/service-single/1">Service Single</Link></li>
                                                 </ul>
-                                            </li>
+                                            </li> */}
                                             <li className="menu-item-has-children">
-                                                <Link onClick={ClickHandler} to="/project">Project</Link>
+                                                <Link onClick={ClickHandler} to="/project">Home Stays </Link>
                                                 <ul className="sub-menu">
-                                                    <li><Link onClick={ClickHandler} to="/project">Project</Link></li>
-                                                    <li><Link onClick={ClickHandler} to="/project-s2">Project S2</Link></li>
-                                                    <li><Link onClick={ClickHandler} to="/project-single/1">Project Single</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/Whitehouse">WHITE HOUSE</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/GardenVilla">GARDEN VILLA</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/CottageHouse">COTTAGE HOUSE</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/TopVilla">HILL TOP VILLA</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/SunriseHome">SUNRISE HOME</Link></li>
+                                                    {/* <li><Link onClick={ClickHandler} to="/project-s2">Project S2</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/project-single/1">Project Single</Link></li> */}
                                                 </ul>
                                             </li>
-                                            <li className="menu-item-has-children">
+                                            {/* <li className="menu-item-has-children">
                                                 <Link onClick={ClickHandler} to="/blog">Blog</Link>
                                                 <ul className="sub-menu">
                                                     <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
@@ -94,8 +99,8 @@ export default class Header2 extends Component {
                                                         </ul>
                                                     </li>
                                                 </ul>
-                                            </li>
-                                            <li className="menu-item-has-children">
+                                            </li> */}
+                                            {/* <li className="menu-item-has-children">
                                                 <Link onClick={ClickHandler} to="/">Pages</Link>
                                                 <ul className="sub-menu">
                                                     <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
@@ -109,8 +114,9 @@ export default class Header2 extends Component {
                                                     <li><Link onClick={ClickHandler} to="/login">Login</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/register">Register</Link></li>
                                                 </ul>
-                                            </li>
-                                            <li><Link onClick={ClickHandler} to="contact">Contact</Link></li>
+                                            </li> */}
+                                            <li><Link onClick={ClickHandler} to="/Catering">Catering </Link></li>
+                                            <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                         </ul>
 
                                     </div>
@@ -124,10 +130,10 @@ export default class Header2 extends Component {
                                                     <span></span>
                                                     <span></span>
                                                 </div>
-                                                <div className={`header-right-menu-wrap ${isSidebarShow ? 'right-menu-active' : ''}`}>
+                                                <div className={`header-right-menu-wrap ${isSidebarShow ? 'right-menu-active' : ''}`} >
                                                     <button onClick={this.sidebarHandler} className="right-menu-close"><i className="ti-close"></i></button>
                                                     <div className="logo"><img src={Logo} alt="" /></div>
-                                                    <div className="header-right-sec">
+                                                    <div className="header-right-sec" >
                                                         <div className="project-widget widget">
                                                             <h3>Our Latest Projects</h3>
                                                             <ul>
@@ -151,7 +157,7 @@ export default class Header2 extends Component {
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <div className="widget newsletter-widget">
+                                                        {/* <div className="widget newsletter-widget">
                                                             <div className="widget-title">
                                                                 <h3>Newsletter</h3>
                                                             </div>
@@ -164,7 +170,7 @@ export default class Header2 extends Component {
                                                                     </div>
                                                                 </div>
                                                             </form>
-                                                        </div>
+                                                        </div> */}
                                                     </div>
                                                 </div>
                                             </div>

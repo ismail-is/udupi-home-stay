@@ -16,7 +16,7 @@ const About3 = (props) => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="wpo-about-img">
-                            <img src={abimg} alt=""/>
+                            <img src='https://arkio-react.wpocean.com/static/media/about4.aa6a7dee8260ec0b7b19.jpg' alt=""/>
                             <div className="wpo-about-img-text">
                                 <h2>25+</h2>
                                 <p>Years of Experience</p>

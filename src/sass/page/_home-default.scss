@@ -187,6 +187,36 @@
 						transition: all .3s;
 					}
 				}
+				.left-border1{
+					position: absolute;
+					left: 350px;
+					top: 20px;
+					width: 100%;
+					height: 100%;
+					z-index: 11;
+
+					&:before{
+						position: absolute;
+						left: 0;
+						top: 15px;
+						height: 1px;
+						width: 0;
+						background:yellow;
+						content: "";
+						transition: all .3s;
+						
+					}
+					&::after{
+						position: absolute;
+						left: 15px;
+						top: 0;
+						height: 0;
+						width: 1px;
+						background:yellow;
+						content: "";
+						transition: all .3s;
+					}
+				}
 				.right-border{
 					position: absolute;
 					right: 20px;

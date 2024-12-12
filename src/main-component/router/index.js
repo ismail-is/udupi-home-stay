@@ -32,6 +32,12 @@ import ErrorPage from '../ErrorPage'
 import LoginPage from '../LoginPage'
 import SignUpPage from '../SignUpPage'
 import ForgotPassword from '../ForgotPassword'
+import WhiteHouse from '../WhiteHouse';
+import Catering from '../Catering';
+import GardenVilla from '../GardenVilla';
+import CottageHouse from '../CottageHouse';
+import TopVilla from '../TopVilla';
+import SunriseHome from '../SunriseHome';
 
 
 const AllRoute = () => {
@@ -40,13 +46,20 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter basename='/udupi-home-stay'>
         <Routes >
-          <Route exact path='/' element={<Homepage/>} />
+          <Route exact path='/home4' element={<Homepage/>} />
           <Route path='home' element={<Homepage/>} />
           <Route path='home2' element={<Homepage2/>} />
           <Route path='home3' element={<Homepage3/>} />
-          <Route path='home4' element={<Homepage4/>} />
+          {/* <Route path='home4' element={<Homepage4/>} /> */}
+          <Route path='/' element={<Homepage4/>} />
+          <Route path='/Catering' element={<Catering/>} />
+          <Route path='/GardenVilla' element={<GardenVilla/>} />
+          <Route path='/CottageHouse' element={<CottageHouse/>} />
+          <Route path='/TopVilla' element={<TopVilla/>} />
+          <Route path='/SunriseHome' element={<SunriseHome/>} />
           <Route path='home5' element={<Homepage5/>} />
           <Route path='about' element={<AboutPage/>} />
+          <Route path='Whitehouse' element={<WhiteHouse/>} />
           <Route path='project-single/:id' element={<ProjectSinglePage/>} />
           <Route path='service-single/:id' element={<ServiceSinglePage/>} />
           <Route path='team-single/:id' element={<TeamSinglePage/>} />
