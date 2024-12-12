@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/udupi-home-stay/static/css/main.3b0a58c0.css",
-    "main.js": "/udupi-home-stay/static/js/main.747bbc2e.js",
+    "main.css": "/udupi-home-stay/static/css/main.95dddb2a.css",
+    "main.js": "/udupi-home-stay/static/js/main.8a66471a.js",
     "static/js/787.884f7618.chunk.js": "/udupi-home-stay/static/js/787.884f7618.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/udupi-home-stay/static/media/fontawesome-webfont.ed6298903ae1554c7f3e.svg",
     "static/media/themify.svg?-fvbane": "/udupi-home-stay/static/media/themify.f0fc8c798eac5636249c.svg",
@@ -24,15 +24,16 @@
     "static/media/Muli-Regular.woff": "/udupi-home-stay/static/media/Muli-Regular.1097f30cacc100fa75f3.woff",
     "static/media/Muli-SemiBold.woff": "/udupi-home-stay/static/media/Muli-SemiBold.e4511dae91686ad50116.woff",
     "static/media/bg.png": "/udupi-home-stay/static/media/bg.1eabf87e9fe42166556e.png",
+    "static/media/greenlogo.webp": "/udupi-home-stay/static/media/greenlogo.c6229046924070069bad.webp",
+    "static/media/udpi.webp": "/udupi-home-stay/static/media/udpi.7f16525c3d967541a790.webp",
+    "static/media/home stay.png": "/udupi-home-stay/static/media/home stay.97aa54873a98418002a1.png",
     "static/media/slide-1.jpg": "/udupi-home-stay/static/media/slide-1.9b6b401e7766a4d2aaed.jpg",
     "static/media/slide-2.jpg": "/udupi-home-stay/static/media/slide-2.9b6b401e7766a4d2aaed.jpg",
     "static/media/slide-3.jpg": "/udupi-home-stay/static/media/slide-3.9b6b401e7766a4d2aaed.jpg",
-    "static/media/bg-2.jpg": "/udupi-home-stay/static/media/bg-2.76339b0a4cde907157ab.jpg",
     "static/media/page-title.jpg": "/udupi-home-stay/static/media/page-title.76339b0a4cde907157ab.jpg",
     "static/media/flaticon.eot?": "/udupi-home-stay/static/media/flaticon.0a22d916b475161d9f38.eot",
     "static/media/flaticon.ttf?": "/udupi-home-stay/static/media/flaticon.787d715af65fbdc47f8a.ttf",
     "static/media/logo.svg": "/udupi-home-stay/static/media/logo.31ca5eba0614a39fe97ec5d08caf6044.svg",
-    "static/media/logo-2.svg": "/udupi-home-stay/static/media/logo-2.f1a7bb2ceeb17bd08b16e841f0cf5bfa.svg",
     "static/media/flaticon.woff?": "/udupi-home-stay/static/media/flaticon.4f3dc68d396437c888db.woff",
     "static/media/flaticon.woff2?": "/udupi-home-stay/static/media/flaticon.407f71a4f642751397ba.woff2",
     "static/media/slick.svg": "/udupi-home-stay/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -40,12 +41,12 @@
     "static/media/slick.ttf": "/udupi-home-stay/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/udupi-home-stay/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/udupi-home-stay/index.html",
-    "main.3b0a58c0.css.map": "/udupi-home-stay/static/css/main.3b0a58c0.css.map",
-    "main.747bbc2e.js.map": "/udupi-home-stay/static/js/main.747bbc2e.js.map",
+    "main.95dddb2a.css.map": "/udupi-home-stay/static/css/main.95dddb2a.css.map",
+    "main.8a66471a.js.map": "/udupi-home-stay/static/js/main.8a66471a.js.map",
     "787.884f7618.chunk.js.map": "/udupi-home-stay/static/js/787.884f7618.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b0a58c0.css",
-    "static/js/main.747bbc2e.js"
+    "static/css/main.95dddb2a.css",
+    "static/js/main.8a66471a.js"
   ]
 }
