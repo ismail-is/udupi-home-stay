@@ -26,20 +26,20 @@ const About3 = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4 col-lg-6 col-md-12 colsm-12">
+                    <div className="col-xl-6 col-lg-6 col-md-12 colsm-12">
                         <div className="wpo-about-text">
                             <h1>About Us</h1>
                             <div className="wpo-about-title">
-                                <h2>We Offer You Profesional Interior Design</h2>
+                                <h2>Exceptional Catering Services for Your Special Occasions</h2>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consctetur adipiscing elit. Aceim aliquam feugiat
-                                ullamcorper. Id risus mattis.</p>
-                            <ul className="ab-list">
+                            <p>We take pride in offering exceptional catering services for all your special occasions. Whether it's a grand wedding, a large-scale party, or an intimate family gathering, our team is dedicated to delivering</p>
+                            {/* <ul className="ab-list">
                                 <li>We provide free initial consultation and support.</li>
                                 <li>We have the professional designers team.</li>
                                 <li>We work with some of the most successful businesses.</li>
-                            </ul>
-                            <div className="btns">
+                            </ul> */}
+                            <p>Our catering menu is thoughtfully crafted, featuring a wide range of dishes prepared with fresh, high-quality ingredients to suit your preferences and the occasion. From traditional delicacies to contemporary favorites, we ensure that every dish is a perfect blend of taste and presentation</p>
+                            {/* <div className="btns">
                                 <Link to="/about" onClick={ClickHandler} className="theme-btn">Discover More</Link>
                                 <ul>
                                     <li className="video-holder">
@@ -49,7 +49,7 @@ const About3 = (props) => {
                                         Watch Our Video
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

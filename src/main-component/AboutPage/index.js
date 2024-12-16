@@ -13,6 +13,7 @@ import Scrollbar from '../../components/scrollbar'
 import Logo from '../../images/allimg/greenlogo.webp'
 // import Logo from '../../images/logo.svg'
 import abimg from '../../images/about.jpg'
+import About5 from '../../components/about5';
 
 
 const AboutPage =() => {
@@ -22,12 +23,13 @@ const AboutPage =() => {
             <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
             {/* <About abimg={abimg}/> */}
             <About abClass={'wpo-about-area-s5'} abimg={abimg}/>
-            {/* <ProjectSection/> */}
+            <ProjectSection/>
             {/* <ServiceSection/> */}
             <FunFact fnClass={'wpo-fun-fact-section-s2'}/>
+            {/* <ServiceSection/> */}
             {/* <Pricing/> */}
             {/* <TeamSection/> */}
-            <About abimg={abimg}/>
+            <About5 abimg={abimg}/>
             {/* <Testimonial/> */}
             <Footer ftClass={'wpo-site-footer-s2'}/>
             <Scrollbar/>

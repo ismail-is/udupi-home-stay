@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     ribbon1: {
       position: "absolute",
       top: "15px",
-      right: "-70px",
+      right: "-50px",
       background: "#ffd700",
       color: "#333",
       fontWeight: "bold",

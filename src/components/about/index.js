@@ -19,11 +19,13 @@ const About = (props) => {
                     <div className="col-lg-7 col-md-12 colsm-12">
                         <div className="wpo-about-text">
                             <div className="wpo-about-title">
-                                <span>About Us</span>
-                                <h2>We Offer You Profesional Interior Design</h2>
+                                <span>One State Many Worlds-Karnataka</span>
+                                <h2>Recognized by Karnataka Tourism: Best Homestays in Udupi</h2>
                             </div>
-                        <h5>Over 25 years Liarch helping investors building their drea & business goals go to the perfection</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac enim aliquam feugiat ullamcorper. Id risus mattis neque, ullamcorper. Sed sit commodo vestibulum cras in cras. Nec proin scelerisque quis nisl vitae, egestas non. Fringilla auctor.</p>
+                        {/* <h5>Experience the perfect blend of comfort and culture at Udupi Homestays, proudly recognized by Karnataka Tourism for excellence in hospitality.</h5> */}
+                        <p>Experience the perfect blend of comfort and culture at Udupi Homestays, proudly recognized by Karnataka Tourism for excellence in hospitality.</p>
+                        <p>Our accommodations cater to families, travelers, and business guests, offering modern amenities with a touch of Karnataka's rich heritage.</p>
+                        <p>Book now and discover why Udupi Homestays is the top choice for a truly authentic experience.</p>
                             <div className="btns">
                                 <Link to="/about" onClick={ClickHandler} className="theme-btn">Discover More</Link>
                                 <ul>

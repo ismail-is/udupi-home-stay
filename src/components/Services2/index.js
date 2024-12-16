@@ -17,8 +17,8 @@ const ServiceSection2 = (props) => {
             <div className="container-fluid">
                 <SectionTitle2 subTitle={'Our Capabilities'} MainTitle={'What We Do'} vText={'Services'}/>
                 <div className="row align-items-center">
-                    {Services.slice(6,10).map((service, sitem) => (
-                        <div className="col-lg-3 col-md-6 col-12" key={sitem}>
+                    {Services.slice(6,9).map((service, sitem) => (
+                        <div className="col-lg-4 col-md-6 col-12" key={sitem}>
                             <div className="wpo-service-item">
                                 <div className="wpo-service-img">
                                     <img src={service.sImg} alt=""/>

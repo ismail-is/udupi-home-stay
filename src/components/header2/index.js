@@ -77,6 +77,8 @@ export default class Header2 extends Component {
                                                     <li><Link onClick={ClickHandler} to="/CottageHouse">COTTAGE HOUSE</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/TopVilla">HILL TOP VILLA</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/SunriseHome">SUNRISE HOME</Link></li>
+                                                          <li><Link onClick={ClickHandler} to="/ChaletLabonne">CHALET LABONNE </Link></li>
+                                                               <li><Link onClick={ClickHandler} to="/ViewPoint ">VIEWPOINT OASIS </Link></li>
                                                     {/* <li><Link onClick={ClickHandler} to="/project-s2">Project S2</Link></li>
                                                     <li><Link onClick={ClickHandler} to="/project-single/1">Project Single</Link></li> */}
                                                 </ul>
@@ -148,12 +150,12 @@ export default class Header2 extends Component {
                                                             </div>
                                                             <div className="contact-ft">
                                                                 <ul>
-                                                                    <li><i className="fi flaticon-location"></i>68D, Belsion Town
-                                                                        2365 <br /> Fna city, LH 3656, USA</li>
-                                                                    <li><i className="fi flaticon-telephone"></i>+ 8 (123) 123 456
-                                                                        789 <br />
-                                                                        + 8 (123) 123 456 789</li>
-                                                                    <li><i className="fi flaticon-email"></i>arkio@gmail.com</li>
+                                                                    <li><i className="fi flaticon-location"></i>H.No. 4-4-95, Bhaghat
+                                                                    Singh Marg,Udupi 576101</li>
+                                                                    <li><i className="fi flaticon-telephone"></i>+ +91 89712 20576<br />
+                                                                    +91 80501 23132</li>
+                                                                    <li><i className="fi flaticon-email"></i>fahad@udupistay.com <br/>
+                                                                    asif@udupistay.com</li> 
                                                                 </ul>
                                                             </div>
                                                         </div>

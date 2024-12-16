@@ -53,11 +53,13 @@ class ProjectSection extends Component {
 
         return (
             <div className={`wpo-project-area ${this.props.pClass}`}>
-                <div className="container-fluid">
+                <div className="container-fluid" style={{marginTop:'40px',marginBottom:'30px'}}>
                     <div className="row align-items-center">
+                    {/* <div class="wpo-about-title"><span>One State Many Worlds-Karnataka</span><h2>Recognized by Karnataka Tourism: Best Homestays in Udupi</h2></div> */}
                         <div className="wpo-project-wrap project-active owl-carousel">
+                           
                             <Slider {...settings}>
-                                {Projects.slice(0, 4).map((project, pot) => (
+                                {Projects.slice(0, 7).map((project, pot) => (
                                     <div className="wpo-project-item" key={pot}>
                                         <div className="wpo-project-img">
                                             <img src={project.pImg} alt="" />
@@ -65,8 +67,8 @@ class ProjectSection extends Component {
                                             <div className="right-border"></div>
                                         </div>
                                         <div className="wpo-project-text">
-                                            <h2><Link onClick={ClickHandler} to={`/project-single/${project.Id}`}>{project.title}</Link></h2>
-                                            <span>{project.subTitle}</span>
+                                            <h2 style={{fontSize:'30px'}}><Link onClick={ClickHandler} to={`/project-single/${project.Id}`}>{project.title}</Link></h2>
+                                            {/* <span>{project.subTitle}</span> */}
                                         </div>
                                     </div>
                                 ))}

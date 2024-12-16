@@ -22,8 +22,8 @@ const Footer = (props) =>{
                             <div className="logo widget-title">
                                 <Link onClick={ClickHandler} className="logo" to="/"><img src={Logo} alt=""/></Link>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Viverra laoreet ultrices
-                                donec placerat commodo elementum justo, consequat.</p>
+                            <p>Udupi Homestays, recognized by Karnataka Tourism, offers modern comforts, serene locations, and authentic hospitality for the perfect Udupi experience.
+                            </p>
                             <ul>
                             <li>
                                     <Link onClick={ClickHandler} to="/">

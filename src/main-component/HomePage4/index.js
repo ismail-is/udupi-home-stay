@@ -26,6 +26,7 @@ const HomePage4 =() => {
             <Booking/>
             <About4/>
             <BlogSection/>
+                 {/* <BlogSectionS2/> */}
             <FunFact/>
             {/* <ServiceSection3 ptClass={'pt-0'}/> */}
             {/* <ProjectSectionS4/> */}

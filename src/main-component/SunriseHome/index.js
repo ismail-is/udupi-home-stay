@@ -17,6 +17,9 @@ import Discuss from '../ServiceSinglePage/discuss';
 import RelatedProject from '../ProjectSinglePage/related';
 import BlogList from '../../components/BlogList';
 import Offer from '../../components/Offer';
+import SunriseHomebook from '../../components/SunriseHomebook';
+import CottageHouseImg from '../../components/CottageHouseImg';
+import SunriseHomeImg from '../../components/SunriseHomeImg';
 
 
 
@@ -36,37 +39,21 @@ const SunriseHome =() => {
                                     
                                         <div className="col-lg-7">
                                             <div className="wpo-project-single-title">
-                                                <h3>White House</h3>
+                                                <h3>Sunrise House 3-BHK with Fully Furnished</h3>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere
-                                                amet
-                                                tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum
-                                                cursus
-                                                velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit
-                                                dictum
-                                                quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id
-                                                aliquet duis
-                                                sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit
-                                                curabitur
-                                                amet risus bibendum. Posuere et eget orci, tempor enim.</p>
-                                            <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat
-                                                odio
-                                                facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra
-                                                est, at
-                                                rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit
-                                                sit Et nisi in libero facilisis sed est. Elit curabitur amet risus bibendum.
-                                                Posuere et eget orci. sed velit dictum quam. Id risus pharetra est</p>
+                                            <p>Sunrise Home is a spacious, air-conditioned 3-BHK villa, fully furnished with all the modern amenities to ensure a comfortable stay. Conveniently located just 7 kilometers from Udupi city center and 4 kilometers from Katapadi, near the national highway, it offers easy access to both urban and natural attractions.</p>
+                                            <p>The villa is situated near udupi & manipal, perched on a small hill, providing an exceptionally peaceful and serene environment. The elevated position of the villa offers a tranquil atmosphere, perfect for escaping the hustle and bustle of city life. Guests can enjoy the refreshing natural breeze and the soothing sounds of wildlife, making it an ideal retreat for relaxation.</p>
                                         </div>
                                         <div className="col-lg-5">
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
-                                                    <li>Location :<span>7 Lake Street,London</span></li>
-                                                    <li>Client :<span>wpOceans</span></li>
-                                                    <li>Architect :<span>Harry Johnson</span></li>
-                                                    <li>Project Type :<span>Interior</span></li>
-                                                    <li>Duration :<span>6 Month</span></li>
-                                                    <li>Completion :<span>15 Apr 2022</span></li>
-                                                    <li>Share :<span>Architectural, Business</span></li>
+                                                    <li>Property Type :<span>Sunrise House</span></li>
+                                                    <li>Capacity :<span>10+ Guests</span></li>
+                                                    <li>Rooms :<span>3 BHK with A/C</span></li>
+                                                    <li>Location :<span>Udupi, Karnataka</span></li>
+                                                    <li>Features :<span> Ideal for families and Friends</span></li>
+                                                    <li>Facilities :<span>Free Wi-Fi, Fully Equipped Kitchen, Parking</span></li>
+                                                    {/* <li>Share :<span>Architectural, Business</span></li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -75,7 +62,8 @@ const SunriseHome =() => {
                                     <div className="wpo-project-single-main-img">
                                         <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
                                     </div>
-                                    <div className="wpo-project-single-item list-widget">
+
+                                    {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="wpo-project-single-title">
@@ -102,11 +90,11 @@ const SunriseHome =() => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div >
-                                    <WhiteVillabook/>
+                                    <SunriseHomebook/>
                                     </div>
-                                    <div className="wpo-project-single-item">
+                                    {/* <div className="wpo-project-single-item">
                                         <div className="wpo-project-single-title">
                                             <h3>Our approach</h3>
                                         </div>
@@ -117,8 +105,8 @@ const SunriseHome =() => {
                                             id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
                                             adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
                                             vulputate diam interdum morbi ac a.</p>
-                                    </div>
-                                    <div className="wpo-project-single-gallery">
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-gallery">
                                         <div className="row mt-4">
                                             <div className="col-md-6 col-sm-6 col-12">
                                                 <div className="wpo-p-details-img">
@@ -131,8 +119,8 @@ const SunriseHome =() => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="wpo-project-single-item list-widget">
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="wpo-project-single-title">
@@ -157,10 +145,11 @@ const SunriseHome =() => {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* <BlogList/> */}
                                     {/* <RelatedProject/>
                                     <Discuss/> */}
+                                       <BlogList/>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +158,7 @@ const SunriseHome =() => {
             </div>
 
 
-
+            <SunriseHomeImg/>
 
 
 

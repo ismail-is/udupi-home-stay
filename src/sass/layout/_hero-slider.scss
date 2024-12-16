@@ -18,10 +18,13 @@
 
 	@include media-query(991px) {
 		height: 600px;
+		
 	}
 
 	@include media-query(767px) {
-		height: 500px;
+		height: 500px !important;
+		width: 100% !important;
+		object-fit: fill !important;
 	}
 
 	.swiper-slide {

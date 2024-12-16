@@ -13,14 +13,14 @@ const ProjectSectionS2 = () => {
     return (
         <div className="wpo-project-area-s2 section-padding">
             <div className="container">
-                <SectionTitle subTitle={'Featured Works'} MainTitle={'Our Projects'}/>
+                <SectionTitle subTitle={'Udupi Homestay'} MainTitle={'Our Homestays '}/>
                 <div className="row align-items-center">
                     <div className="wpo-project-wrap">
                         <div className="sortable-gallery">
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="project-grids gallery-container clearfix">
-                                        {Projects.slice(3, 9).map((project, pot) => (
+                                        {Projects.slice(0, 9).map((project, pot) => (
                                             <div className="grid" key={pot}>
                                                 <div className="wpo-project-item">
                                                     <div className="wpo-project-img">

@@ -18,8 +18,8 @@ const About4 = (props) => {
                         <div className="wpo-about-img">
                             <img src={abimg} alt="" />
                             <div className="wpo-about-img-text">
-                                <h2>25+</h2>
-                                <p>Years of Experience</p>
+                                <h2>5+</h2>
+                                <p>Signature Homestays</p>
                                 <div className="about-shape">
                                     <img src={abimg2} alt="" />
                                 </div>
@@ -45,10 +45,10 @@ const About4 = (props) => {
                         <div className="wpo-about-text">
                             <div className="wpo-about-title">
                                 <span>About Us</span>
-                                <h2>We Offer You Profesional Interior Design</h2>
+                                <h2 style={{fontSize:'35px'}}>Experience Unique Comfort at Udupi Homestay</h2>
                             </div>
-                            <h5>Over 25 years Liarch helping investors building their drea & business goals go to the perfection</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac enim aliquam feugiat ullamcorper. Id risus mattis neque, ullamcorper. Sed sit commodo vestibulum cras in cras. Nec proin scelerisque quis nisl vitae, egestas non. Fringilla auctor.</p>
+                            {/* <h5>Discover six distinct homestays, each with unique themes and designs, offering a personalized retreat. Enjoy a spacious park for gatherings, a refreshing pool with a jacuzzi, and a stunning rooftop view.</h5> */}
+                            <p>Discover six distinct homestays, each with unique themes and designs, offering a personalized retreat. Enjoy a spacious park for gatherings, a refreshing pool with a jacuzzi, and a stunning rooftop view.</p>
                             <div className="btns">
                                 <Link to="/about" onClick={ClickHandler} className="theme-btn">Discover More</Link>
                                 <ul>

@@ -17,7 +17,17 @@ import Discuss from '../ServiceSinglePage/discuss';
 import RelatedProject from '../ProjectSinglePage/related';
 import BlogList from '../../components/BlogList';
 import Offer from '../../components/Offer';
-
+import CottageHousebook from '../../components/CottageHousebook';
+import gameimg from '../../images/icons/game room.png'
+import HIghspeed from '../../images/icons/HIghspeed.png'
+import Outdoor from '../../images/icons/Outdoor.png'
+import DRIVERS from '../../images/icons/DRIVERS.png'
+import Hall from '../../images/icons/Hall.png'
+import cleaning from '../../images/icons/cleaning.png'
+import Kitchen from '../../images/icons/Kitchen.png'
+import i24 from '../../images/icons/i24.png'
+import GardenImg from '../../components/GardenImg';
+import CottageHouseImg from '../../components/CottageHouseImg';
 
 
 const CottageHouse =() => {
@@ -36,37 +46,21 @@ const CottageHouse =() => {
                                     
                                         <div className="col-lg-7">
                                             <div className="wpo-project-single-title">
-                                                <h3>White House</h3>
+                                                <h3>Cottage House 3-BHK with Fully Furnished</h3>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus dis posuere
-                                                amet
-                                                tincidunt commodo, velit. Ipsum, hac nibh fermentum nisi, platea condimentum
-                                                cursus
-                                                velit dui. Massa volutpat odio facilisis purus sit elementum. Non, sed velit
-                                                dictum
-                                                quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id
-                                                aliquet duis
-                                                sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit
-                                                curabitur
-                                                amet risus bibendum. Posuere et eget orci, tempor enim.</p>
-                                            <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat
-                                                odio
-                                                facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra
-                                                est, at
-                                                rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit
-                                                sit Et nisi in libero facilisis sed est. Elit curabitur amet risus bibendum.
-                                                Posuere et eget orci. sed velit dictum quam. Id risus pharetra est</p>
+                                            <p>This charming Cottage House is a fully furnished, air-conditioned 3-BHK villa that offers all the modern amenities for a comfortable stay. Located in a serene setting, just 7 kilometers from Udupi city center and 4 kilometers from Katapadi, near the national highway, it is ideally situated for both convenience and tranquility. </p>
+                                            <p>The Cottage House is situated in a peaceful neighborhood, surrounded by lush greenery and offering a calm atmosphere that allows guests to escape the hustle and bustle of everyday life. Enjoy the refreshing morning breeze, the soothing sounds of nature, and a truly relaxing stay in this delightful cottage. Whether you seek relaxation or adventure, the Cottage House provides the perfect environment to unwind and rejuvenate.</p>
                                         </div>
                                         <div className="col-lg-5">
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
-                                                    <li>Location :<span>7 Lake Street,London</span></li>
-                                                    <li>Client :<span>wpOceans</span></li>
-                                                    <li>Architect :<span>Harry Johnson</span></li>
-                                                    <li>Project Type :<span>Interior</span></li>
-                                                    <li>Duration :<span>6 Month</span></li>
-                                                    <li>Completion :<span>15 Apr 2022</span></li>
-                                                    <li>Share :<span>Architectural, Business</span></li>
+                                                    <li>Property Type :<span>Cottage House</span></li>
+                                                    <li>Capacity :<span> 10+ Guests</span></li>
+                                                    <li>Rooms :<span>3 BHK with A/C</span></li>
+                                                    <li>Location:<span>Udupi, Karnataka</span></li>
+                                                    <li>Features :<span> Ideal for families and Friends</span></li>
+                                                    <li>Facilities :<span>Free Wi-Fi, Fully Equipped Kitchen, Parking</span></li>
+                                                    {/* <li>Share :<span>Architectural, Business</span></li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -75,7 +69,7 @@ const CottageHouse =() => {
                                     <div className="wpo-project-single-main-img">
                                         <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
                                     </div>
-                                    <div className="wpo-project-single-item list-widget">
+                                    {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="wpo-project-single-title">
@@ -102,11 +96,100 @@ const CottageHouse =() => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
+
+<div className="wpo-service-single-item">
+            <div className="wpo-service-single-title">
+                <h3>Facilities</h3>
+            </div>
+            <div className="wpo-service-area">
+                <div className="row align-items-center">
+                    {/* {Services.slice(0,3).map((service, sitem) => ( */}
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Hall}></img>
+                            {/* <i className='fi flaticon-planning' ></i> */}
+                                <h5>Spacious Hall (10-12 Person)</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={gameimg}></img>
+                                <h5> Game Room
+                                (Roof Top)</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Outdoor}></img>
+                                <h5 style={{textAlign:"center"}}>Outdoor
+                                BBQ</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={HIghspeed}></img>
+                                <h5 >High-speed
+                                Internet</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+
+
+                        
+                    {/* ))} */}
+                </div>
+            </div>
+            <div className="wpo-service-area" >
+                <div className="row align-items-center">
+                    {/* {Services.slice(0,3).map((service, sitem) => ( */}
+                        
+                    <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={DRIVERS}></img>
+                                <h5 > Drivers
+                                Accommodation</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Kitchen}></img>
+                                <h5 > Complete
+                                Kitchen Utensils</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={i24}></img>
+                                <h5 > 24 Hrs
+                                Water & Electriciy</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={cleaning}></img>
+                                <h5 > Free
+                                Cleaning</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+
+                        
+                    {/* ))} */}
+                </div>
+            </div>
+        </div>
                                     <div >
-                                    <WhiteVillabook/>
+                                    <CottageHousebook/>
                                     </div>
-                                    <div className="wpo-project-single-item">
+                                    <BlogList/>
+                                    {/* <div className="wpo-project-single-item">
                                         <div className="wpo-project-single-title">
                                             <h3>Our approach</h3>
                                         </div>
@@ -117,8 +200,8 @@ const CottageHouse =() => {
                                             id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
                                             adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
                                             vulputate diam interdum morbi ac a.</p>
-                                    </div>
-                                    <div className="wpo-project-single-gallery">
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-gallery">
                                         <div className="row mt-4">
                                             <div className="col-md-6 col-sm-6 col-12">
                                                 <div className="wpo-p-details-img">
@@ -131,8 +214,8 @@ const CottageHouse =() => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="wpo-project-single-item list-widget">
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="wpo-project-single-title">
@@ -157,7 +240,7 @@ const CottageHouse =() => {
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* <BlogList/> */}
                                     {/* <RelatedProject/>
                                     <Discuss/> */}
@@ -167,7 +250,7 @@ const CottageHouse =() => {
                     </div>
                 </div>
             </div>
-
+<CottageHouseImg/>
 
 
 

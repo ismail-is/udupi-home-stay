@@ -99,6 +99,11 @@ const menus = [
                 id: 45,
                 title: 'SUNRISE HOME',
                 link: 'SunriseHome'
+            },
+            {
+                id: 46,
+                title: 'CHALET LABONNE ',
+                link: 'ChaletLabonne'
             }
         ]
     },
