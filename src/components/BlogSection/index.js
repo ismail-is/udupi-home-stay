@@ -20,6 +20,7 @@ const BlogSection = (props) => {
                     <div className="row">
                         {blogs.slice(0,6).map((blog, Bitem) => (
                             <div className="col col-lg-4 col-md-6 col-12" key={Bitem}>
+                                      <Link onClick={ClickHandler} to={`${blog.id}`}>
                                 <div className="wpo-blog-item">
                                     <div className="wpo-blog-img">
                                         <img src={blog.screens} alt=""/>
@@ -30,10 +31,11 @@ const BlogSection = (props) => {
                                             <li></li>
                                             <li>{blog.author}</li>
                                         </ul>
-                                        <h2><Link onClick={ClickHandler} to={`/blog-single/${blog.id}`}>{blog.title}</Link></h2>
+                                        <h2><Link onClick={ClickHandler} to={`${blog.id}`}>{blog.title}</Link></h2>
                                         <p>{blog.description}</p>
                                     </div>
                                 </div>
+                                </Link>
                             </div>
                         ))}
                     </div>
@@ -67,6 +69,7 @@ const BlogSection = (props) => {
                 {/* single  */}
                 <div className="wpo-blog-items" >
                             <div className="col col-lg-12 col-md-6 col-12" >
+                            <Link  to={`/ViewPoint`}>
                                 <div className="wpo-blog-item" >
                                     <div className="wpo-blog-img">
                                         <img src={Viewpoint} alt="" style={{height:'30px'}}/>
@@ -77,10 +80,11 @@ const BlogSection = (props) => {
                                             <li></li>
                                             <li>Near Udupi (7 km) & Manipal (15 km)</li>
                                         </ul>
-                                        <h2><Link onClick={ClickHandler} to={`/blog-single/`}>ViewPoint Oasis</Link></h2>
+                                        <h2><Link onClick={ClickHandler} to={`/ViewPoint`}>ViewPoint Oasis</Link></h2>
                                         <p>Jacuzzi, View Poin, BBQ Area </p>
                                     </div>
                                 </div>
+                                </Link>
                             </div>
                 </div>
                 {/* single  */}

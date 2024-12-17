@@ -41,7 +41,7 @@ import white from "../images/allimg/Homestay/white.webp";
 
 const Projects = [
     {
-       Id:'1',
+       Id:'/Whitehouse',
        pImg:white,
        ps1img:ps1img1,
        psub1img1:psub1img1,
@@ -51,7 +51,7 @@ const Projects = [
        link:'Whitehouse'
     },
     {
-       Id:'2',
+       Id:'/GardenVilla',
        pImg:Garden,
        ps1img:ps1img2,
        psub1img1:psub1img1,
@@ -60,7 +60,7 @@ const Projects = [
        subTitle:'GARDEN VILLA',    
     },
     {
-      Id:'3',
+      Id:'/CottageHouse',
       pImg:Cottage,
       ps1img:ps1img3,
       psub1img1:psub1img1,
@@ -69,7 +69,7 @@ const Projects = [
       subTitle:'COTTAGE HOUSE',   
    },
     {
-       Id:'4',
+       Id:'/TopVilla',
        pImg:HillTop,
        ps1img:ps1img4,
        psub1img1:psub1img1,
@@ -78,7 +78,7 @@ const Projects = [
        subTitle:'HILL TOP VILLA', 
     },
     {
-       Id:'5',
+       Id:'/SunriseHome',
        pImg:Sunrise,
        ps1img:ps1img5,
        psub1img1:psub1img1,
@@ -87,7 +87,7 @@ const Projects = [
        subTitle:'SUNRISE HOME',   
     },
     {
-       Id:'6',
+       Id:'/ChaletLabonne',
        pImg:Chalet,
        ps1img:ps1img6,
        psub1img1:psub1img1,
@@ -96,7 +96,7 @@ const Projects = [
        subTitle:'CHALET LABONNE',    
     },
     {
-      Id:'7',
+      Id:'/ViewPoint',
       pImg:Viewpoint,
       ps1img:ps1img7,
       psub1img1:psub1img1,

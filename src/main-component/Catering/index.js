@@ -11,13 +11,14 @@ import Footer from '../../components/footer';
 import Scrollbar from '../../components/scrollbar'
 import Logo from '../../images/logo.svg'
 import PageTitle from '../../components/pagetitle';
+import img from '../../images/allimg/Catering/CateringHome.webp';
 
 
 const Catering =() => {
     return(
         <Fragment>
             <Navbar2 Logo={Logo} hclass={'wpo-header-style-2'}/>
-            <PageTitle pageTitle={'Catering'} pagesub={'Catering'}/> 
+            <PageTitle pageTitle={'Catering'} src={img}/> 
             <About3/>
             {/* <ServiceSection2/>
             <FunFact/>

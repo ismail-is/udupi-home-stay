@@ -9,7 +9,7 @@ const About = (props) => {
         window.scrollTo(10, 0);
      }
     return(
-        <div className={`wpo-about-area section-padding ${props.abClass}`}>
+        <div className={`wpo-about-area section-padding ${props.abClass}`} >
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-12 col-sm-12">

@@ -67,7 +67,7 @@ class ProjectSection extends Component {
                                             <div className="right-border"></div>
                                         </div>
                                         <div className="wpo-project-text">
-                                            <h2 style={{fontSize:'30px'}}><Link onClick={ClickHandler} to={`/project-single/${project.Id}`}>{project.title}</Link></h2>
+                                            <h2 style={{fontSize:'30px'}}><Link onClick={ClickHandler} to={`${project.Id}`}>{project.title}</Link></h2>
                                             {/* <span>{project.subTitle}</span> */}
                                         </div>
                                     </div>

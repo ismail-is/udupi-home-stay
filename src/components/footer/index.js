@@ -26,25 +26,26 @@ const Footer = (props) =>{
                             </p>
                             <ul>
                             <li>
-                                    <Link onClick={ClickHandler} to="/">
+                                    <a href="https://www.instagram.com/udupihomestay__/" target='blank'>
                                         <i className="ti-instagram"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link onClick={ClickHandler} to="/">
+                                    <a  href="https://www.facebook.com/udupistay" target='blank'>
                                         <i className="ti-facebook"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link onClick={ClickHandler} to="/">
+                                    <a href="/https://www.youtube.com/@udupistay" target='blank'>
                                         <i className="ti-youtube"></i>
-                                    </Link>
+                                    </a>
                                 </li>
                                 
                                 <li>
-                                    <Link onClick={ClickHandler} to="/">
-                                        <i className="ti-email"></i>
-                                    </Link>
+                                <a href="mailto:fahad@udupistay.com" target='_blank'>
+    <i className="ti-email"></i>
+</a>
+
                                 </li>
                             </ul>
                         </div>
@@ -92,7 +93,7 @@ const Footer = (props) =>{
                             </div>
                             <ul className="d-flex">
                                 {Projects.slice(0, 6).map((project, pot) => (
-                                    <li key={pot}><Link onClick={ClickHandler} to={`/project-single/${project.Id}`}><img src={project.pImg} alt="" /></Link></li>
+                                    <li key={pot}><Link onClick={ClickHandler} to={`${project.Id}`}><img src={project.pImg} alt="" /></Link></li>
                                 ))}
                             </ul>
                         </div>
@@ -105,7 +106,7 @@ const Footer = (props) =>{
                 <div className="row">
                     <div className="col col-xs-12">
                         <ul>
-                            <li>&copy; 2024 udupistay. Design By <Link to="https://brightmedia.tech/" target='blank'>Bright Media </Link></li>
+                            <li>&copy; 2024 udupistay. Design By <a href="https://brightmedia.tech/" target='blank'>Bright Media </a></li>
                             {/* <li><Link onClick={ClickHandler} to="/">Terms of use |</Link> <Link onClick={ClickHandler} to="/">Privacy Environmental Policy</Link></li> */}
                         </ul>
                     </div>

@@ -5,13 +5,14 @@ import Contactpage from '../../components/Contactpage'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
 import Logo from '../../images/allimg/greenlogo.webp'
+import Chalettop from '../../images/allimg/top/Chalettop.webp'
 
 
 const ContactPage =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'Contact Us'} pagesub={'Contact'}/> 
+            <PageTitle pageTitle={'Contact Us'} src={Chalettop}/> 
             <Contactpage/>
             <Footer ftClass={'wpo-site-footer-s2'}/>
             <Scrollbar/>

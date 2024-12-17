@@ -14,13 +14,14 @@ import Logo from '../../images/allimg/greenlogo.webp'
 // import Logo from '../../images/logo.svg'
 import abimg from '../../images/about.jpg'
 import About5 from '../../components/about5';
+import img from '../../images/allimg/top/aboutpage.webp';
 
 
 const AboutPage =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'About Us'} pagesub={'About'}/> 
+            <PageTitle pageTitle={'About Us'}  src={img}/> 
             {/* <About abimg={abimg}/> */}
             <About abClass={'wpo-about-area-s5'} abimg={abimg}/>
             <ProjectSection/>

@@ -104,6 +104,11 @@ const menus = [
                 id: 46,
                 title: 'CHALET LABONNE ',
                 link: '/ChaletLabonne'
+            },
+            {
+                id: 47,
+                title: 'VIEWPOINT OASIS ',
+                link: '/ViewPoint'
             }
         ]
     },

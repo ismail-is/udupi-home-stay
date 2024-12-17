@@ -17,7 +17,7 @@ import white from "../images/allimg/Homestay/white.webp";
 
 const blogs = [
     {
-        id: '1',
+        id: '/Whitehouse',
         title: 'WHITE HOUSE',
         thumb:'30+ Capacity ',
         screens: white,
@@ -30,7 +30,7 @@ const blogs = [
         blClass:'format-standard-image',
     },
     {
-        id: '2',
+        id: '/GardenVilla',
         title: 'GARDEN VILLA ',
         thumb:'25+ Capacity ',
         screens: Garden,
@@ -43,7 +43,7 @@ const blogs = [
         blClass:'format-standard-image',
     },
     {
-        id: '3',
+        id: '/CottageHouse',
         title: 'COTTAGE HOUSE',
         thumb:' 10+ Capacity ',
         screens: Cottage,
@@ -56,7 +56,7 @@ const blogs = [
         blClass:'format-video',
     },
     {
-        id: '4',
+        id: '/TopVilla',
         title: 'HILL TOP VILLA',
         thumb:' 10+ Capacity  ',
         screens: HillTop,
@@ -69,7 +69,7 @@ const blogs = [
         blClass:'format-video',
     },
     {
-        id: '5',
+        id: '/SunriseHome',
         title: 'SUNRISE HOME',
         thumb:' 10+ Capacity  ',
         screens: Sunrise,
@@ -82,7 +82,7 @@ const blogs = [
         blClass:'format-video',
     },
     {
-        id: '6',
+        id: '/ChaletLabonne',
         title: 'Challet La Bonne Vie',
         thumb:' 10+ Capacity  ',
         screens: Chalet,
