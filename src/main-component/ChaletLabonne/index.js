@@ -29,12 +29,12 @@ import ChaletBook from '../../components/ChaletBook';
 import ViewPointImg from '../../components/ViewPointImg';
 import ChaletLabonneImg from '../../components/ChaletLabonneImg';
 import img1 from '../../images/allimg/chalet/1.webp'
-
+import Chalettop from '../../images/allimg/top/Chalettop.webp'
 const ChaletLabonne =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'Chalet Labonne'} /> 
+            <PageTitle pageTitle={'Chalet Labonne'} src={Chalettop}/> 
            
             <div className="wpo-project-single-area section-padding">
                 <div className="container">

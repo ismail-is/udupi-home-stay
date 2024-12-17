@@ -30,12 +30,13 @@ import i24 from '../../images/icons/i24.png'
 import GardenImg from '../../components/GardenImg';
 import CottageHouseImg from '../../components/CottageHouseImg';
 import TopVillaImg from '../../components/TopVillaImg';
-
+import img1 from '../../images/allimg/HomeSlider/hilltop.webp'
+import top from '../../images/allimg/top/Hilltop.webp'
 const TopVilla =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'HILL TOP VILLA'} /> 
+            <PageTitle pageTitle={'HILL TOP VILLA'} src={top}/> 
            
             <div className="wpo-project-single-area section-padding">
                 <div className="container">
@@ -68,7 +69,7 @@ const TopVilla =() => {
                                     </div>
                                
                                     <div className="wpo-project-single-main-img">
-                                        <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
+                                        <img src={img1} alt=""/>
                                     </div>
 
                                   
@@ -169,7 +170,7 @@ const TopVilla =() => {
 
             <TopVillaImg/>
 
-            
+
             <div className="wpo-project-single-area" style={{marginTop:'20px'}}>
                 <div className="container">
                     <div className="row justify-content-center">

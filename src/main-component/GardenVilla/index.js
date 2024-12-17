@@ -28,6 +28,7 @@ import Kitchen from '../../images/icons/Kitchen.png'
 import i24 from '../../images/icons/i24.png'
 import GardenImg from '../../components/GardenImg';
 import green from '../../images/allimg/HomeSlider/green.webp'
+import img1 from '../../images/allimg/HomeSlider/green.webp'
 
 const GardenVilla =() => {
     return(
@@ -67,7 +68,7 @@ const GardenVilla =() => {
                                     </div>
                                
                                     <div className="wpo-project-single-main-img">
-                                        <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
+                                        <img src={img1} alt=""/>
                                     </div>
 
 

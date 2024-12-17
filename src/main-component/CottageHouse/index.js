@@ -29,13 +29,14 @@ import img1 from '../../images/allimg/Cottage/1.webp'
 import i24 from '../../images/icons/i24.png'
 import GardenImg from '../../components/GardenImg';
 import CottageHouseImg from '../../components/CottageHouseImg';
-
+// import img1 from '../../images/allimg/HomeSlider/cottage.webp'
+import Cottage from '../../images/allimg/top/Cottage.webp'
 
 const CottageHouse =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'COTTAGE HOUSE'} /> 
+            <PageTitle pageTitle={'COTTAGE HOUSE'} src={Cottage}/> 
            
             <div className="wpo-project-single-area section-padding">
                 <div className="container">

@@ -29,12 +29,13 @@ import cleaning from '../../images/icons/cleaning.png'
 import Kitchen from '../../images/icons/Kitchen.png'
 import i24 from '../../images/icons/i24.png'
 import img1 from '../../images/allimg/sunrise/1.webp';
+import Sunrisetop from '../../images/allimg/top/Sunrisetop.webp'
 
 const SunriseHome =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'SUNRISE HOME'} /> 
+            <PageTitle pageTitle={'SUNRISE HOME'} src={Sunrisetop}/> 
            
             <div className="wpo-project-single-area section-padding">
                 <div className="container">

@@ -31,6 +31,8 @@ import ServiceSection2 from '../../components/Services2';
 import ServiceSection3 from '../../components/Services3';
 import ProjectSectionS2 from '../../components/ProjectsS2';
 import WhiteHouseImg from '../../components/WhiteHouseImg';
+import top from '../../images/allimg/top/whitetop.webp';
+import img1 from '../../images/allimg/HomeSlider/whiteHouse.webp'
 
 
 
@@ -38,7 +40,7 @@ const WhiteHouse =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'WHITE HOUSE'} /> 
+            <PageTitle pageTitle={'WHITE HOUSE'} src={top} /> 
            
             <div className="wpo-project-single-area section-padding">
                 <div className="container">
@@ -74,7 +76,7 @@ const WhiteHouse =() => {
                                     </div>
                                
                                     <div className="wpo-project-single-main-img">
-                                        <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
+                                        <img src={img1} alt=""/>
                                     </div>
                                     {/* <WhitehouseSlider/> */}
                                     {/* <div className="wpo-project-single-item list-widget">

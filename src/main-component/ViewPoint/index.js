@@ -31,13 +31,13 @@ import Hall from '../../images/icons/Hall.png'
 import cleaning from '../../images/icons/cleaning.png'
 import Kitchen from '../../images/icons/Kitchen.png'
 import i24 from '../../images/icons/i24.png'
-
+import Viewtop from '../../images/allimg/top/Viewtop.webp'
 
 const ViewPoint  =() => {
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
-            <PageTitle pageTitle={'ViewPoint Oasis'} /> 
+            <PageTitle pageTitle={'ViewPoint Oasis'} src={img1}/> 
            
             <div className="wpo-project-single-area section-padding">
                 <div className="container">
@@ -49,16 +49,16 @@ const ViewPoint  =() => {
                                     
                                         <div className="col-lg-7">
                                             <div className="wpo-project-single-title">
-                                                <h3>Chalet La Bonne Vie  2-BHK with Fully Modern Furnished</h3>
+                                                <h3>View Point Oasis - Jacuzzi, BBQ area, rooftop viewpoint</h3>
                                             </div>
-                                            <p>Chalet La Bonne Vie is a luxurious 2-BHK homestay that offers a perfect blend of modern comfort and serene natural beauty. Featuring a fully equipped modern kitchen, this charming retreat ensures a cozy and convenient stay for guests. </p>
-                                            <p>What sets Chalet La Bonne Vie apart is its unique backyard—a beautiful bird sanctuary bustling with vibrant avian life, a farm with friendly domestic animals, and a tranquil fish pond situated right next to the rooms. Guests can enjoy stunning views of the bird sanctuary and farm directly from their room, creating an immersive experience in nature. Whether you’re seeking relaxation or a connection with the outdoors, Chalet La Bonne Vie is the ideal escape.</p>
+                                            <p>ViewPoint Oasis is an exclusive outdoor retreat for Udupi Homestay guests, featuring a relaxing jacuzzi, a dedicated BBQ area, and a spacious garden perfect for family gatherings and fun.</p>
+                                            <p>The **rooftop viewpoint** offers stunning panoramic views, making it an ideal spot to unwind, enjoy nature, and create lasting memories with loved ones.</p>
                                         </div>
                                         <div className="col-lg-5">
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
                                                     <li>Property Type :<span>Chalet La Bonne Vie</span></li>
-                                                    <li>Capacity :<span>10+ Guests</span></li>
+                                                    <li>Capacity :<span>20+ Guests</span></li>
                                                     {/* <li>Rooms :<span>6BHK with A/C</span></li> */}
                                                     <li>Location :<span> Udupi, Karnataka</span></li>
                                                     <li>Features :<span>Ideal for Friends and Family</span></li>

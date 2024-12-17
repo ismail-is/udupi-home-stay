@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import VideoModal from '../../components/ModalVideo'
+import img1 from '../../images/allimg/karnataka.webp'
 
 
 const About = (props) => {
@@ -13,7 +14,7 @@ const About = (props) => {
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-12 col-sm-12">
                         <div className="wpo-about-img">
-                            <img src={props.abimg} alt=""/>
+                            <img src={img1} alt=""/>
                         </div>
                     </div>
                     <div className="col-lg-7 col-md-12 colsm-12">
