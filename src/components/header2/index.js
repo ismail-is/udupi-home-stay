@@ -140,7 +140,7 @@ export default class Header2 extends Component {
                                                             <h3>Our Latest Projects</h3>
                                                             <ul>
                                                                 {Projects.slice(0, 6).map((project, pot) => (
-                                                                    <li key={pot}><Link onClick={ClickHandler} to={`/project-single/${project.Id}`}><img src={project.pImg} alt="" /></Link></li>
+                                                                    <li key={pot}><Link onClick={ClickHandler} to={`${project.Id}`}><img src={project.pImg} alt="" /></Link></li>
                                                                 ))}
                                                             </ul>
                                                         </div>
