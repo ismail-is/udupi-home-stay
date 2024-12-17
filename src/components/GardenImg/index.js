@@ -11,7 +11,7 @@ const GardenImg = () => {
 
 
     return (
-        <div className="wpo-project-area-s2 section-padding" style={{marginTop:'-300px'}}> 
+        <div className="wpo-project-area-s2 " style={{marginTop:'-150px'}}> 
             <div className="container">
                 {/* <SectionTitle subTitle={'Udupi Homestay'} MainTitle={'Our Homestays '}/> */}
                 <div className="row align-items-center">
@@ -20,7 +20,7 @@ const GardenImg = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="project-grids gallery-container clearfix">
-                                        {Projects.slice(0, 10).map((project, pot) => (
+                                        {Projects.slice(0, 19).map((project, pot) => (
                                             <div className="grid" key={pot}>
                                                 <div className="wpo-project-item">
                                                     <div className="wpo-project-img">

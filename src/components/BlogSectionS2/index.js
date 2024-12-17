@@ -4,7 +4,7 @@ import SectionTitle3 from '../SectionTitle3'
 import {Link} from 'react-router-dom'
 import bShape1 from '../../images/blog/Vector3.png'
 import bShape2 from '../../images/blog/Vector4.png'
-
+import Viewpoint from "../../images/allimg/Homestay/Viewpoint.webp";
 const BlogSectionS2 = (props) => {
     
     const ClickHandler = () =>{
@@ -50,7 +50,7 @@ const BlogSectionS2 = (props) => {
                                             <div className="col col-lg-12 col-md-6 col-12" >
                                                 <div className="wpo-blog-item" >
                                                     <div className="wpo-blog-img">
-                                                        <img src='https://arkio-react.wpocean.com/static/media/11.b6e86fbb1505e01919cb.jpg' alt="" style={{height:'30px'}}/>
+                                                        <img src={Viewpoint}/>
                                                         <div className="thumb">20+ Capacity</div>
                                                     </div>
                                                     <div className="wpo-blog-content">

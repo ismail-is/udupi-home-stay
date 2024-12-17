@@ -7,7 +7,13 @@ import "slick-carousel/slick/slick-theme.css";
 import hero1 from '../../images/slider/slide-4.jpg'
 import hero2 from '../../images/allimg/HomeSlider/one.jpg'
 import hero3 from '../../images/slider/slide-5.jpg' 
-import SUNRISE from '../../images/allimg/HomeSlider/1.webp' 
+import green from '../../images/allimg/HomeSlider/green.webp' 
+import sunrise from '../../images/allimg/HomeSlider/sunrise.webp' 
+import view from '../../images/allimg/HomeSlider/view.webp' 
+import chalet from '../../images/allimg/HomeSlider/chalet.webp' 
+import cottage from '../../images/allimg/HomeSlider/cottage.webp' 
+import whiteHouse from '../../images/allimg/HomeSlider/whiteHouse.webp' 
+import hilltop from '../../images/allimg/HomeSlider/hilltop.webp' 
 
 
 
@@ -38,7 +44,7 @@ class Hero4 extends Component {
                     <div className="hero-wrapper">
                         <Slider {...settings}>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${hero1})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${whiteHouse})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">
@@ -53,7 +59,7 @@ class Hero4 extends Component {
                                 </div>
                             </div>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${hero2})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${green})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">
@@ -68,7 +74,7 @@ class Hero4 extends Component {
                                 </div>
                             </div>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${hero3})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${cottage})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">
@@ -83,7 +89,7 @@ class Hero4 extends Component {
                                 </div>
                             </div>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${hero3})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${hilltop})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">
@@ -98,7 +104,7 @@ class Hero4 extends Component {
                                 </div>
                             </div>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${SUNRISE})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${sunrise})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">
@@ -113,7 +119,7 @@ class Hero4 extends Component {
                                 </div>
                             </div>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${hero3})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${chalet})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">
@@ -128,7 +134,7 @@ class Hero4 extends Component {
                                 </div>
                             </div>
                             <div className="hero-slide">
-                                <div className="slide-inner" style={{ backgroundImage: `url(${hero3})` }}>
+                                <div className="slide-inner" style={{ backgroundImage: `url(${view})` }}>
                                     <div className="container-fluid">
                                         <div className="slide-content">
                                             <div className="slide-title">

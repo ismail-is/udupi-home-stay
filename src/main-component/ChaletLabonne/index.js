@@ -17,9 +17,18 @@ import Discuss from '../ServiceSinglePage/discuss';
 import RelatedProject from '../ProjectSinglePage/related';
 import BlogList from '../../components/BlogList';
 import Offer from '../../components/Offer';
+import gameimg from '../../images/icons/game room.png'
+import HIghspeed from '../../images/icons/HIghspeed.png'
+import Outdoor from '../../images/icons/Outdoor.png'
+import DRIVERS from '../../images/icons/DRIVERS.png'
+import Hall from '../../images/icons/Hall.png'
+import cleaning from '../../images/icons/cleaning.png'
+import Kitchen from '../../images/icons/Kitchen.png'
+import i24 from '../../images/icons/i24.png'
 import ChaletBook from '../../components/ChaletBook';
-
-
+import ViewPointImg from '../../components/ViewPointImg';
+import ChaletLabonneImg from '../../components/ChaletLabonneImg';
+import img1 from '../../images/allimg/chalet/1.webp'
 
 const ChaletLabonne =() => {
     return(
@@ -58,9 +67,9 @@ const ChaletLabonne =() => {
                                     </div>
                                
                                     <div className="wpo-project-single-main-img">
-                                        <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
+                                        <img src={img1} alt=""/>
                                     </div>
-                                    <div className="wpo-project-single-item list-widget">
+                                    {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="wpo-project-single-title">
@@ -87,7 +96,7 @@ const ChaletLabonne =() => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* <div className="wpo-service-single-item">
             <div className="wpo-service-single-title">
                 <h3>Facilities</h3>
@@ -165,7 +174,7 @@ const ChaletLabonne =() => {
                                     <div >
                                     <ChaletBook/>
                                     </div>
-                                    <div className="wpo-project-single-item">
+                                    {/* <div className="wpo-project-single-item">
                                         <div className="wpo-project-single-title">
                                             <h3>Our approach</h3>
                                         </div>
@@ -176,8 +185,8 @@ const ChaletLabonne =() => {
                                             id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
                                             adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
                                             vulputate diam interdum morbi ac a.</p>
-                                    </div>
-                                    <div className="wpo-project-single-gallery">
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-gallery">
                                         <div className="row mt-4">
                                             <div className="col-md-6 col-sm-6 col-12">
                                                 <div className="wpo-p-details-img">
@@ -190,7 +199,7 @@ const ChaletLabonne =() => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
@@ -220,6 +229,8 @@ const ChaletLabonne =() => {
                                     {/* <BlogList/> */}
                                     {/* <RelatedProject/>
                                     <Discuss/> */}
+
+        <BlogList/>
                                 </div>
                             </div>
                         </div>
@@ -228,9 +239,113 @@ const ChaletLabonne =() => {
             </div>
 
 
+            <ChaletLabonneImg/>
+
+  <div className="wpo-project-single-area" style={{marginTop:'20px'}}>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-10 col-12">
+                            <div className="wpo-project-single-wrap">
+                                <div className="wpo-project-single-item">
+                                    
+                               
+                                   
+                               
+                                   
+                                    <div className="wpo-service-single-item">
+            <div className="wpo-service-single-title">
+                <h3>Facilities</h3>
+            </div>
+            <div className="wpo-service-area">
+                <div className="row align-items-center">
+                    {/* {Services.slice(0,3).map((service, sitem) => ( */}
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Hall}></img>
+                            {/* <i className='fi flaticon-planning' ></i> */}
+                                <h5>Spacious Hall (10-12 Person)</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={gameimg}></img>
+                                <h5> Game Room
+                                (Roof Top)</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Outdoor}></img>
+                                <h5 style={{textAlign:"center"}}>Outdoor
+                                BBQ</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={HIghspeed}></img>
+                                <h5 >High-speed
+                                Internet</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
 
 
+                        
+                    {/* ))} */}
+                </div>
+            </div>
+            <div className="wpo-service-area" >
+                <div className="row align-items-center">
+                    {/* {Services.slice(0,3).map((service, sitem) => ( */}
+                        
+                    <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={DRIVERS}></img>
+                                <h5 > Drivers
+                                Accommodation</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Kitchen}></img>
+                                <h5 > Complete
+                                Kitchen Utensils</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={i24}></img>
+                                <h5 > 24 Hrs
+                                Water & Electriciy</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={cleaning}></img>
+                                <h5 > Free
+                                Cleaning</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
 
+                        
+                    {/* ))} */}
+                </div>
+            </div>
+        </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

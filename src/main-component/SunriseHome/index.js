@@ -20,8 +20,15 @@ import Offer from '../../components/Offer';
 import SunriseHomebook from '../../components/SunriseHomebook';
 import CottageHouseImg from '../../components/CottageHouseImg';
 import SunriseHomeImg from '../../components/SunriseHomeImg';
-
-
+import gameimg from '../../images/icons/game room.png'
+import HIghspeed from '../../images/icons/HIghspeed.png'
+import Outdoor from '../../images/icons/Outdoor.png'
+import DRIVERS from '../../images/icons/DRIVERS.png'
+import Hall from '../../images/icons/Hall.png'
+import cleaning from '../../images/icons/cleaning.png'
+import Kitchen from '../../images/icons/Kitchen.png'
+import i24 from '../../images/icons/i24.png'
+import img1 from '../../images/allimg/sunrise/1.webp';
 
 const SunriseHome =() => {
     return(
@@ -60,7 +67,7 @@ const SunriseHome =() => {
                                     </div>
                                
                                     <div className="wpo-project-single-main-img">
-                                        <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
+                                        <img src={img1} alt=""/>
                                     </div>
 
                                     {/* <div className="wpo-project-single-item list-widget">
@@ -94,6 +101,8 @@ const SunriseHome =() => {
                                     <div >
                                     <SunriseHomebook/>
                                     </div>
+
+                                   
                                     {/* <div className="wpo-project-single-item">
                                         <div className="wpo-project-single-title">
                                             <h3>Our approach</h3>
@@ -160,6 +169,112 @@ const SunriseHome =() => {
 
             <SunriseHomeImg/>
 
+
+            <div className="wpo-project-single-area" style={{marginTop:'20px'}}>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-10 col-12">
+                            <div className="wpo-project-single-wrap">
+                                <div className="wpo-project-single-item">
+                                    
+                               
+                                   
+                               
+                                   
+                                    <div className="wpo-service-single-item">
+            <div className="wpo-service-single-title">
+                <h3>Facilities</h3>
+            </div>
+            <div className="wpo-service-area">
+                <div className="row align-items-center">
+                    {/* {Services.slice(0,3).map((service, sitem) => ( */}
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Hall}></img>
+                            {/* <i className='fi flaticon-planning' ></i> */}
+                                <h5>Spacious Hall (10-12 Person)</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={gameimg}></img>
+                                <h5> Game Room
+                                (Roof Top)</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Outdoor}></img>
+                                <h5 style={{textAlign:"center"}}>Outdoor
+                                BBQ</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={HIghspeed}></img>
+                                <h5 >High-speed
+                                Internet</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+
+
+                        
+                    {/* ))} */}
+                </div>
+            </div>
+            <div className="wpo-service-area" >
+                <div className="row align-items-center">
+                    {/* {Services.slice(0,3).map((service, sitem) => ( */}
+                        
+                    <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={DRIVERS}></img>
+                                <h5 > Drivers
+                                Accommodation</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={Kitchen}></img>
+                                <h5 > Complete
+                                Kitchen Utensils</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={i24}></img>
+                                <h5 > 24 Hrs
+                                Water & Electriciy</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-6" >
+                            <div className="wpo-service-item" style={{textAlign:'center'}}>
+                            <img src={cleaning}></img>
+                                <h5 > Free
+                                Cleaning</h5>
+                                {/* <p>{service.des2}</p> */}
+                            </div>
+                        </div>
+
+                        
+                    {/* ))} */}
+                </div>
+            </div>
+        </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

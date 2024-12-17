@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import VideoModal from '../../components/ModalVideo'
-import abimg from '../../images/about5.jpg'
+import abimg from '../../images/allimg/Homestay/homeabout.webp'
 import abimg2 from '../../images/about-shape3.png'
 
 
@@ -18,7 +18,7 @@ const About4 = (props) => {
                         <div className="wpo-about-img">
                             <img src={abimg} alt="" />
                             <div className="wpo-about-img-text">
-                                <h2>5+</h2>
+                                <h2>6+</h2>
                                 <p>Signature Homestays</p>
                                 <div className="about-shape">
                                     <img src={abimg2} alt="" />

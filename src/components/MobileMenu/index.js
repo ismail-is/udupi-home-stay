@@ -72,7 +72,7 @@ const menus = [
 //     },
 {
     id: 4,
-        title: 'Projects',
+        title: 'Home Stays',
         link: '/project',
         submenu: [
             {
@@ -88,22 +88,22 @@ const menus = [
             {
                 id: 43,
                 title: 'COTTAGE HOUSE',
-                link: 'CottageHouse'
+                link: '/CottageHouse'
             },
             {
                 id: 44,
                 title: 'HILL TOP VILLA',
-                link: 'TopVilla'
+                link: '/TopVilla'
             },
             {
                 id: 45,
                 title: 'SUNRISE HOME',
-                link: 'SunriseHome'
+                link: '/SunriseHome'
             },
             {
                 id: 46,
                 title: 'CHALET LABONNE ',
-                link: 'ChaletLabonne'
+                link: '/ChaletLabonne'
             }
         ]
     },

@@ -11,7 +11,8 @@ const TopVillaImg = () => {
 
 
     return (
-        <div className="wpo-project-area-s2 section-padding" style={{marginTop:'-300px'}}> 
+        <div className="wpo-project-area-s2 " style={{marginTop:'-150px'}}> 
+        {/* <div className="wpo-project-area-s2 section-padding" style={{marginTop:'-300px'}}>  */}
             <div className="container">
                 {/* <SectionTitle subTitle={'Udupi Homestay'} MainTitle={'Our Homestays '}/> */}
                 <div className="row align-items-center">

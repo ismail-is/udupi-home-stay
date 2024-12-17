@@ -1,13 +1,14 @@
-import pimg1 from '../images/allimg/whitehouse/9.webp';
-import pimg2 from '../images/allimg/whitehouse/2.webp';
-import pimg3 from '../images/allimg/whitehouse/3.webp';
-import pimg4 from '../images/allimg/whitehouse/4.webp';
-import pimg5 from '../images/allimg/whitehouse/5.webp';
-import pimg6 from '../images/allimg/whitehouse/6.webp';
-import pimg7 from '../images/allimg/whitehouse/7.webp';
-import pimg8 from '../images/allimg/whitehouse/8.webp';
-import pimg9 from '../images/allimg/whitehouse/1.webp';
+import pimg1 from '../images/allimg/Cottage/1.webp';
+import pimg2 from '../images/allimg/Cottage/2.webp';
+import pimg3 from '../images/allimg/Cottage/3.webp';
+import pimg4 from '../images/allimg/Cottage/4.webp';
+import pimg5 from '../images/allimg/Cottage/5.webp';
+import pimg6 from '../images/allimg/Cottage/6.webp';
+import pimg7 from '../images/allimg/Cottage/7.webp';
+import pimg8 from '../images/allimg/Cottage/8.webp';
+import pimg9 from '../images/allimg/Cottage/9.webp';
 import pimg10 from '../images/allimg/whitehouse/10.webp';
+import pimg11 from '../images/allimg/whitehouse/11.webp';
 import ps1img1 from '../images/project-single/1.jpg';
 import ps1img2 from '../images/project-single/2.jpg';
 import ps1img3 from '../images/project-single/3.jpg';
@@ -22,15 +23,7 @@ import psub1img1 from '../images/project-single/p1.jpg';
 import psub1img2 from '../images/project-single/p2.jpg';
 
 const CottageImg = [
-    {
-        Id: '1',
-        pImg: pimg1,
-        ps1img: ps1img1,
-        psub1img1: psub1img1,
-        psub1img2: psub1img2,
-        title: 'WHITE HOUSE',
-        subTitle: 'Luxury Villa in Udupi',
-    },
+  
     {
         Id: '2',
         pImg: pimg2,
@@ -104,8 +97,8 @@ const CottageImg = [
         subTitle: 'Innovative Architecture Design',
     },
     {
-        Id: '10',
-        pImg: pimg10,
+        Id: '11',
+        pImg: pimg11,
         ps1img: ps1img10,
         psub1img1: psub1img1,
         psub1img2: psub1img2,

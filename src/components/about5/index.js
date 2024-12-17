@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import VideoModal from '../../components/ModalVideo'
-
+import abimg from '../../images/allimg/Homestay/homeabout.webp'
 
 const About5 = (props) => {
     const ClickHandler = () =>{
@@ -13,7 +13,7 @@ const About5 = (props) => {
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-12 col-sm-12">
                         <div className="wpo-about-img">
-                            <img src={props.abimg} alt=""/>
+                            <img src={abimg} alt=""/>
                         </div>
                     </div>
                     <div className="col-lg-7 col-md-12 colsm-12">

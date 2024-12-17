@@ -1,13 +1,22 @@
-import pimg1 from '../images/allimg/whitehouse/9.webp';
-import pimg2 from '../images/allimg/whitehouse/2.webp';
-import pimg3 from '../images/allimg/whitehouse/3.webp';
-import pimg4 from '../images/allimg/whitehouse/4.webp';
-import pimg5 from '../images/allimg/whitehouse/5.webp';
-import pimg6 from '../images/allimg/whitehouse/6.webp';
-import pimg7 from '../images/allimg/whitehouse/7.webp';
-import pimg8 from '../images/allimg/whitehouse/8.webp';
-import pimg9 from '../images/allimg/whitehouse/1.webp';
-import pimg10 from '../images/allimg/whitehouse/10.webp';
+import pimg1 from '../images/allimg/gradernVilla/1.webp';
+import pimg2 from '../images/allimg/gradernVilla/2.webp';
+import pimg3 from '../images/allimg/gradernVilla/3.webp';
+import pimg4 from '../images/allimg/gradernVilla/4.webp';
+import pimg5 from '../images/allimg/gradernVilla/5.webp';
+import pimg6 from '../images/allimg/gradernVilla/6.webp';
+import pimg7 from '../images/allimg/gradernVilla/7.webp';
+import pimg8 from '../images/allimg/gradernVilla/8.webp';
+import pimg9 from '../images/allimg/gradernVilla/9.webp';
+import pimg10 from '../images/allimg/gradernVilla/10.webp';
+import pimg11 from '../images/allimg/gradernVilla/11.webp';
+import pimg12 from '../images/allimg/gradernVilla/12.webp';
+import pimg13 from '../images/allimg/gradernVilla/13.webp';
+import pimg14 from '../images/allimg/gradernVilla/14.webp';
+import pimg15 from '../images/allimg/gradernVilla/15.webp';
+import pimg16 from '../images/allimg/gradernVilla/16.webp';
+import pimg17 from '../images/allimg/gradernVilla/17.webp';
+import pimg18 from '../images/allimg/gradernVilla/18.webp';
+import pimg19 from '../images/allimg/gradernVilla/19.webp';
 import ps1img1 from '../images/project-single/1.jpg';
 import ps1img2 from '../images/project-single/2.jpg';
 import ps1img3 from '../images/project-single/3.jpg';
@@ -22,24 +31,8 @@ import psub1img1 from '../images/project-single/p1.jpg';
 import psub1img2 from '../images/project-single/p2.jpg';
 
 const Gardenhouse = [
-    {
-        Id: '1',
-        pImg: pimg1,
-        ps1img: ps1img1,
-        psub1img1: psub1img1,
-        psub1img2: psub1img2,
-        title: 'WHITE HOUSE',
-        subTitle: 'Luxury Villa in Udupi',
-    },
-    {
-        Id: '2',
-        pImg: pimg2,
-        ps1img: ps1img2,
-        psub1img1: psub1img1,
-        psub1img2: psub1img2,
-        title: 'GARDEN VILLA',
-        subTitle: 'Garden Paradise',
-    },
+   
+    
     {
         Id: '3',
         pImg: pimg3,
@@ -112,6 +105,71 @@ const Gardenhouse = [
         title: 'ARCHITECTURE',
         subTitle: 'Creative Building Concepts',
     },
+    {
+        Id: '11',
+        pImg: pimg11,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+    {
+        Id: '12',
+        pImg: pimg12,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+    {
+        Id: '13',
+        pImg: pimg13,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+    {
+        Id: '14',
+        pImg: pimg14,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+    
+    {
+        Id: '16',
+        pImg: pimg16,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+    {
+        Id: '17',
+        pImg: pimg17,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+    {
+        Id: '18',
+        pImg: pimg18,
+        ps1img: ps1img10,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Creative Building Concepts',
+    },
+   
 ];
 
 export default Gardenhouse;

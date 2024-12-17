@@ -31,12 +31,18 @@ import ps1img14 from '../images/project-single/14.jpg'
 
 import psub1img1 from '../images/project-single/p1.jpg'
 import psub1img2 from '../images/project-single/p2.jpg'
-
+import Cottage from "../images/allimg/Homestay/Cottage.webp";
+import HillTop from "../images/allimg/Homestay/HillTop.webp";
+import Sunrise from "../images/allimg/Homestay/Sunrise.webp";
+import Chalet from "../images/allimg/Homestay/Chalet.webp";
+import Garden from "../images/allimg/Homestay/Garden .webp";
+import Viewpoint from "../images/allimg/Homestay/Viewpoint1.webp";
+import white from "../images/allimg/Homestay/white.webp";
 
 const Projects = [
     {
        Id:'1',
-       pImg:pimg1,
+       pImg:white,
        ps1img:ps1img1,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
@@ -46,7 +52,7 @@ const Projects = [
     },
     {
        Id:'2',
-       pImg:pimg2,
+       pImg:Garden,
        ps1img:ps1img2,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
@@ -55,7 +61,7 @@ const Projects = [
     },
     {
       Id:'3',
-      pImg:pimg3,
+      pImg:Cottage,
       ps1img:ps1img3,
       psub1img1:psub1img1,
       psub1img2:psub1img2,
@@ -64,7 +70,7 @@ const Projects = [
    },
     {
        Id:'4',
-       pImg:pimg4,
+       pImg:HillTop,
        ps1img:ps1img4,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
@@ -73,7 +79,7 @@ const Projects = [
     },
     {
        Id:'5',
-       pImg:pimg5,
+       pImg:Sunrise,
        ps1img:ps1img5,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
@@ -82,7 +88,7 @@ const Projects = [
     },
     {
        Id:'6',
-       pImg:pimg6,
+       pImg:Chalet,
        ps1img:ps1img6,
        psub1img1:psub1img1,
        psub1img2:psub1img2,
@@ -91,7 +97,7 @@ const Projects = [
     },
     {
       Id:'7',
-      pImg:pimg7,
+      pImg:Viewpoint,
       ps1img:ps1img7,
       psub1img1:psub1img1,
       psub1img2:psub1img2,

@@ -6,7 +6,13 @@ import blogImg3 from "../images/blog/img-6.jpg";
 import blogSingleImg1 from "../images/blog/img-4.jpg";
 import blogSingleImg2 from "../images/blog/img-5.jpg";
 import blogSingleImg3 from "../images/blog/img-6.jpg";
-
+import Cottage from "../images/allimg/Homestay/Cottage.webp";
+import HillTop from "../images/allimg/Homestay/HillTop.webp";
+import Sunrise from "../images/allimg/Homestay/Sunrise.webp";
+import Chalet from "../images/allimg/Homestay/Chalet.webp";
+import Garden from "../images/allimg/Homestay/Garden .webp";
+import Viewpoint from "../images/allimg/Homestay/Viewpoint.webp";
+import white from "../images/allimg/Homestay/white.webp";
 
 
 const blogs = [
@@ -14,7 +20,7 @@ const blogs = [
         id: '1',
         title: 'WHITE HOUSE',
         thumb:'30+ Capacity ',
-        screens: blogImg1,
+        screens: white,
         description: 'Luxurious 6BHK Villa Near Malpe Beach',
         author: 'Udupi city center',
         authorTitle:'Udupi city center',
@@ -27,7 +33,7 @@ const blogs = [
         id: '2',
         title: 'GARDEN VILLA ',
         thumb:'25+ Capacity ',
-        screens: blogImg2,
+        screens: Garden,
         description: '5 BHK spacious bedrooms and fully furnished',
         author: 'Udupi city center',
         authorTitle:'Creative Director',
@@ -40,7 +46,7 @@ const blogs = [
         id: '3',
         title: 'COTTAGE HOUSE',
         thumb:' 10+ Capacity ',
-        screens: blogImg3,
+        screens: Cottage,
         description: 'Air-conditioned 3-BHK fully furnished villa',
         author: 'Near Udupi (7 km) & Manipal (15 km)',
         authorTitle:'Art Director',
@@ -53,7 +59,7 @@ const blogs = [
         id: '4',
         title: 'HILL TOP VILLA',
         thumb:' 10+ Capacity  ',
-        screens: blogImg3,
+        screens: HillTop,
         description: '3-BHK Villa with Air Conditioning',
         author: 'Near Udupi (7 km) & Manipal (15 km)',
         authorTitle:'Art Director',
@@ -66,7 +72,7 @@ const blogs = [
         id: '5',
         title: 'SUNRISE HOME',
         thumb:' 10+ Capacity  ',
-        screens: blogImg3,
+        screens: Sunrise,
         description: '3-BHK Brick House ',
         author: 'Near Udupi (7 km) & Manipal (15 km)',
         authorTitle:'Art Director',
@@ -79,7 +85,7 @@ const blogs = [
         id: '6',
         title: 'Challet La Bonne Vie',
         thumb:' 10+ Capacity  ',
-        screens: blogImg3,
+        screens: Chalet,
         description: '2-BHK Modern house, Bird sactuary and Farm.',
         author: 'Near Udupi (7 km) & Manipal (15 km)',
         authorTitle:'Art Director',

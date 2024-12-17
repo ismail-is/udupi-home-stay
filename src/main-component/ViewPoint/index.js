@@ -24,7 +24,13 @@ import DRIVERS from '../../images/icons/DRIVERS.png'
 import Hero3 from '../../components/hero3';
 import WhitehouseSlider from '../../components/WhitehouseSlider';
 import ViewPointBook from '../../components/ViewPointBook';
-
+import WhiteHouseImg from '../../components/WhiteHouseImg';
+import ViewPointImg from '../../components/ViewPointImg';
+import img1 from '../../images/allimg/view/10.webp';
+import Hall from '../../images/icons/Hall.png'
+import cleaning from '../../images/icons/cleaning.png'
+import Kitchen from '../../images/icons/Kitchen.png'
+import i24 from '../../images/icons/i24.png'
 
 
 const ViewPoint  =() => {
@@ -65,10 +71,10 @@ const ViewPoint  =() => {
                                     </div>
                                
                                     <div className="wpo-project-single-main-img">
-                                        <img src='https://arkio-react.wpocean.com/static/media/1.d6b071b63a74c7179228.jpg' alt=""/>
+                                        <img src={img1} alt=""/>
                                     </div>
                                     {/* <WhitehouseSlider/> */}
-                                    <div className="wpo-project-single-item list-widget">
+                                    {/* <div className="wpo-project-single-item list-widget">
                                         <div className="row">
                                             <div className="col-lg-6">
                                                 <div className="wpo-project-single-title">
@@ -95,7 +101,90 @@ const ViewPoint  =() => {
                                                 </div>
                                             </div>
                                         </div>
+                                    </div> */}
+                                    
+                                    <div >
+                                    <ViewPointBook/>
                                     </div>
+                                   
+                                    {/* <div className="wpo-project-single-item">
+                                        <div className="wpo-project-single-title">
+                                            <h3>Our approach</h3>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat suspendisse aenean
+                                            tellus augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci facilisi
+                                            eros sed pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit
+                                            elementum, magna id viverra non, velit. Pretium, eros, porttitor fusce auctor vitae
+                                            id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
+                                            adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
+                                            vulputate diam interdum morbi ac a.</p>
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-gallery">
+                                        <div className="row mt-4">
+                                            <div className="col-md-6 col-sm-6 col-12">
+                                                <div className="wpo-p-details-img">
+                                                    <img src='https://arkio-react.wpocean.com/static/media/p2.2b3319864ab05fdaa9bd.jpg' alt=""/>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-6 col-sm-6 col-12">
+                                                <div className="wpo-p-details-img">
+                                                    <img src='https://arkio-react.wpocean.com/static/media/p1.6722c8372f0f23e2737c.jpg' alt=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    {/* <div className="wpo-project-single-item list-widget">
+                                        <div className="row">
+                                            <div className="col-lg-6">
+                                                <div className="wpo-project-single-title">
+                                                    <h3>Resieved goals</h3>
+                                                </div>
+                                                <ul>
+                                                    <li>Non saed velit dictum quam risus pharetra esta.</li>
+                                                    <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
+                                                    <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
+                                                    <li>Massa volutpat odio facilisis purus sit elementum.</li>
+                                                </ul>
+                                            </div>
+                                            <div className="col-lg-6 list-widget-s">
+                                                <div className="wpo-project-single-title">
+                                                    <h3>Results</h3>
+                                                </div>
+                                                <ul>
+                                                    <li>Mauris dignissim blandit cursus imperdiet accumsan lorem.</li>
+                                                    <li>Nam id in non sed cras purus nunc et.</li>
+                                                    <li>Mauris orci, cursus nisl odio est adipiscing gravida magna eget.</li>
+                                                    <li>Quis mauris vel felis convallis nulla dignissim.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> */}
+                                    {/* <BlogList/> */}
+                                    {/* <RelatedProject/>
+                                    <Discuss/> */}
+                         <BlogList/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <ViewPointImg/>
+
+  
+            <div className="wpo-project-single-area" style={{marginTop:'20px'}}>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-10 col-12">
+                            <div className="wpo-project-single-wrap">
+                                <div className="wpo-project-single-item">
+                                    
+                               
+                                   
+                               
+                                   
                                     <div className="wpo-service-single-item">
             <div className="wpo-service-single-title">
                 <h3>Facilities</h3>
@@ -105,7 +194,8 @@ const ViewPoint  =() => {
                     {/* {Services.slice(0,3).map((service, sitem) => ( */}
                         <div className="col-lg-3 col-md-6 col-6" >
                             <div className="wpo-service-item" style={{textAlign:'center'}}>
-                            <i className='fi flaticon-planning' ></i>
+                            <img src={Hall}></img>
+                            {/* <i className='fi flaticon-planning' ></i> */}
                                 <h5>Spacious Hall (10-12 Person)</h5>
                                 {/* <p>{service.des2}</p> */}
                             </div>
@@ -154,7 +244,7 @@ const ViewPoint  =() => {
                         </div>
                         <div className="col-lg-3 col-md-6 col-6" >
                             <div className="wpo-service-item" style={{textAlign:'center'}}>
-                                <i className='fi flaticon-planning' ></i>
+                            <img src={Kitchen}></img>
                                 <h5 > Complete
                                 Kitchen Utensils</h5>
                                 {/* <p>{service.des2}</p> */}
@@ -162,7 +252,7 @@ const ViewPoint  =() => {
                         </div>
                         <div className="col-lg-3 col-md-6 col-6" >
                             <div className="wpo-service-item" style={{textAlign:'center'}}>
-                                <i className='fi flaticon-planning' ></i>
+                            <img src={i24}></img>
                                 <h5 > 24 Hrs
                                 Water & Electriciy</h5>
                                 {/* <p>{service.des2}</p> */}
@@ -170,7 +260,7 @@ const ViewPoint  =() => {
                         </div>
                         <div className="col-lg-3 col-md-6 col-6" >
                             <div className="wpo-service-item" style={{textAlign:'center'}}>
-                                <i className='fi flaticon-planning' ></i>
+                            <img src={cleaning}></img>
                                 <h5 > Free
                                 Cleaning</h5>
                                 {/* <p>{service.des2}</p> */}
@@ -182,75 +272,13 @@ const ViewPoint  =() => {
                 </div>
             </div>
         </div>
-                                    <div >
-                                    <ViewPointBook/>
-                                    </div>
-                                    {/* <div className="wpo-project-single-item">
-                                        <div className="wpo-project-single-title">
-                                            <h3>Our approach</h3>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat suspendisse aenean
-                                            tellus augue morbi risus. Sit morbi vitae morbi sed urna sed purus. Orci facilisi
-                                            eros sed pellentesque. Risus id sed tortor sed scelerisque. Vestibulum elit
-                                            elementum, magna id viverra non, velit. Pretium, eros, porttitor fusce auctor vitae
-                                            id. Phasellus scelerisque nibh eleifend vel enim mauris purus. Rutrum vel sem
-                                            adipiscing nisi vulputate molestie scelerisque molestie ultrices. Eu, fusce
-                                            vulputate diam interdum morbi ac a.</p>
-                                    </div> */}
-                                    <div className="wpo-project-single-gallery">
-                                        <div className="row mt-4">
-                                            <div className="col-md-6 col-sm-6 col-12">
-                                                <div className="wpo-p-details-img">
-                                                    <img src='https://arkio-react.wpocean.com/static/media/p2.2b3319864ab05fdaa9bd.jpg' alt=""/>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6 col-sm-6 col-12">
-                                                <div className="wpo-p-details-img">
-                                                    <img src='https://arkio-react.wpocean.com/static/media/p1.6722c8372f0f23e2737c.jpg' alt=""/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {/* <div className="wpo-project-single-item list-widget">
-                                        <div className="row">
-                                            <div className="col-lg-6">
-                                                <div className="wpo-project-single-title">
-                                                    <h3>Resieved goals</h3>
-                                                </div>
-                                                <ul>
-                                                    <li>Non saed velit dictum quam risus pharetra esta.</li>
-                                                    <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                                                    <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                                                    <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                                                </ul>
-                                            </div>
-                                            <div className="col-lg-6 list-widget-s">
-                                                <div className="wpo-project-single-title">
-                                                    <h3>Results</h3>
-                                                </div>
-                                                <ul>
-                                                    <li>Mauris dignissim blandit cursus imperdiet accumsan lorem.</li>
-                                                    <li>Nam id in non sed cras purus nunc et.</li>
-                                                    <li>Mauris orci, cursus nisl odio est adipiscing gravida magna eget.</li>
-                                                    <li>Quis mauris vel felis convallis nulla dignissim.</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> */}
-                                    {/* <BlogList/> */}
-                                    {/* <RelatedProject/>
-                                    <Discuss/> */}
+                                   
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
 
 
 
