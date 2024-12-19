@@ -83,7 +83,7 @@ const blogs = [
     },
     {
         id: '/ChaletLabonne',
-        title: 'Challet La Bonne Vie',
+        title: 'Chalet La Bonne Vie',
         thumb:' 10+ Capacity  ',
         screens: Chalet,
         description: '2-BHK Modern house, Bird sactuary and Farm.',

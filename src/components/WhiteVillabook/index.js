@@ -65,11 +65,11 @@ const WhiteVillabook = () => {
 
   // Price Data: Key as month range, value as price
   const prices = {
-    "January-March": 10800,
-    "April-May": 13600,
-    "June-August": 10800,
-    "September-December 20": 13600,
-    "December 20-31": 19950,
+    "January-March": "10,800",
+    "April-May": "13,600",
+    "June-August": "10,800",
+    "September-December 20": "13,600",
+    "December 20-31": "19,950",
   };
 
   // Function to determine current price based on the month

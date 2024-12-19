@@ -122,6 +122,12 @@ class WhiteVillaForm extends Component {
           .split("T")[0]
       : today;
 
+    const labelStyle = {
+      color: "black",
+      textAlign: "center",
+      display: "block",
+    };
+
     return (
       <div>
         <div className="wpo-contact-title">
@@ -131,13 +137,17 @@ class WhiteVillaForm extends Component {
           <div className="row">
             <div className="col-lg-3 col-md-6 col-12">
               <div className="form-field">
+                <label htmlFor="checkInDate" style={labelStyle}>
+                  Check-in Date
+                </label>
                 <input
+                  id="checkInDate"
                   value={name}
                   onChange={this.changeHandler}
-                  type="date"
+                  type="date" // Changed type to 'text' for formatted date display
                   name="name"
+                  placeholder="dd-mm-yyyy"
                   min={today}
-                  placeholder="Check-in Date"
                   style={{ backgroundColor: "white" }}
                 />
                 <p style={{ color: "red" }}>{error.name}</p>
@@ -145,13 +155,17 @@ class WhiteVillaForm extends Component {
             </div>
             <div className="col-lg-3 col-md-6 col-12">
               <div className="form-field">
+                <label htmlFor="checkOutDate" style={labelStyle}>
+                  Check-out Date
+                </label>
                 <input
+                  id="checkOutDate"
                   value={lastname}
                   onChange={this.changeHandler}
-                  type="date"
+                  type="date" // Changed type to 'text' for formatted date display
                   name="lastname"
+                  placeholder="dd-mm-yyyy"
                   min={minCheckoutDate}
-                  placeholder="Check-out Date"
                   style={{ backgroundColor: "white" }}
                 />
                 <p style={{ color: "red" }}>{error.lastname}</p>
@@ -159,32 +173,35 @@ class WhiteVillaForm extends Component {
             </div>
             <div className="col-lg-3 col-md-6 col-12">
               <div className="form-field">
+                <label htmlFor="guests" style={labelStyle}>
+                  Number of Guests
+                </label>
                 <input
+                  id="guests"
                   value={guests}
                   onChange={this.changeHandler}
                   type="number"
                   name="guests"
-                  placeholder="No. of Guests"
+                  placeholder="0"
                   min="1"
-                  max='30'
+                  max="30"
                   style={{ backgroundColor: "white" }}
                 />
                 <p style={{ color: "red" }}>{error.guests}</p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center">
+            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center" style={{ marginTop: "20px" }}>
               <div className="form-field">
                 <button
                   type="submit"
                   className="theme-btn"
                   style={{ borderRadius: "3px" }}
-                  
                 >
                   Submit
                 </button>
               </div>
             </div>
-            <div className="col-lg-12 col-md-12 col-12">
+            <div className="col-lg-12 col-md-12 col-12" style={{marginTop:'30px',textAlign:"center"}}>
               <h4>Total Price: Rs. {totalPrice}</h4>
             </div>
           </div>

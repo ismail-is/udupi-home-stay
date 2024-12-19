@@ -32,7 +32,96 @@ import CottageHouseImg from '../../components/CottageHouseImg';
 import TopVillaImg from '../../components/TopVillaImg';
 import img1 from '../../images/allimg/HomeSlider/hilltop.webp'
 import top from '../../images/allimg/top/Hilltop.webp'
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+    sticker: {
+      position: "absolute",
+      right: "5px",
+      top: "35px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "120px",
+      height: "120px",
+      textAlign: "center",
+      background: "linear-gradient(294deg, rgb(134 18 176 / 45%), rgb(150, 176, 18))",
+      color: "#fff",
+      borderRadius: "50%",
+      boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.3)",
+      transition: "transform 0.8s ease",
+      "&:hover": {
+        transform: "scale(1.1)",
+      },
+    },
+    ribbon1: {
+      position: "absolute",
+      top: "15px",
+      right: "-30px",
+      background: "#ffd700",
+      color: "#333",
+      fontWeight: "bold",
+      fontSize: "14px",
+      padding: "5px 10px",
+      transform: "rotate(15deg)",
+      borderRadius: "5px",
+      boxShadow: "0px 5px 10px rgba(0, 0, 0, 0.2)",
+      animation: "rotateRibbon 2s infinite",
+      "&:hover": {
+        transform: "rotate(10deg)",
+      },
+    },
+    ribbon2: {
+      position: "absolute",
+      top: "10px",
+      left: "50px",
+      background: "#96b012",
+      color: "#f9f9fc",
+      fontWeight: "bold",
+      fontSize: "22px",
+      padding: "4px 8px",
+      transform: "rotate(0deg)",
+      borderRadius: "5px",
+      boxShadow: "0px 10px 10px rgba(0, 0, 0, 0.2)",
+      animation: "rotateRibbon 2s infinite",
+     
+    },
+    "@keyframes rotateRibbon": {
+      "0%, 100%": { transform: "rotate(15deg)" },
+      "50%": { transform: "rotate(10deg)" },
+    },
+  }));
 const TopVilla =() => {
+
+    const classes = useStyles();
+
+    // Price Data: Key as month range, value as price
+    const prices = {
+      "January-March": '6,200 ',
+      "April-May": '7,800 ',
+      "June-August": '6,200 ',
+      "September-December 20": '7,800 ',
+      "December 20-31": '12,500 ',
+    };
+  
+    // Function to determine current price based on the month
+    const getCurrentPrice = () => {
+      const month = new Date().getMonth() + 1; // JS months are 0-indexed
+  
+      if (month >= 1 && month <= 3) return prices["January-March"];
+      if (month >= 4 && month <= 5) return prices["April-May"];
+      if (month >= 6 && month <= 8) return prices["June-August"];
+      if (month >= 9 && month <= 12) {
+        const day = new Date().getDate();
+        if (month === 12 && day > 20) return prices["December 20-31"];
+        return prices["September-December 20"];
+      }
+      return "N/A"; // Default fallback
+    };
+  
+    const currentPrice = getCurrentPrice();
+
+
     return(
         <Fragment>
             <Navbar Logo={Logo}/>
@@ -57,12 +146,13 @@ const TopVilla =() => {
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
                                                     <li>Property Type :<span>Hill Top</span></li>
-                                                    <li>Capacity :<span>10+ Guests</span></li>
+                                                    <li>Capacity :<span>10 Guests</span></li>
                                                     <li>Rooms :<span>3 BHK with A/C</span></li>
                                                     <li>Location :<span>Udupi, Karnataka</span></li>
                                                     <li>Features :<span>Ideal for families and Friends</span></li>
                                                     <li>Facilities :<span>Free Wi-Fi, Fully Equipped Kitchen, Parking</span></li>
                                                     {/* <li>Share :<span>Architectural, Business</span></li> */}
+                                                    <li><h5 className={classes.ribbon2}> Price Per Day : {currentPrice} </h5> </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -193,15 +283,16 @@ const TopVilla =() => {
                             <div className="wpo-service-item" style={{textAlign:'center'}}>
                             <img src={Hall}></img>
                             {/* <i className='fi flaticon-planning' ></i> */}
-                                <h5>Spacious Hall (10-12 Person)</h5>
+                                <h5> Open
+                                Kitchen</h5>
                                 {/* <p>{service.des2}</p> */}
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-6" >
                             <div className="wpo-service-item" style={{textAlign:'center'}}>
                             <img src={gameimg}></img>
-                                <h5> Game Room
-                                (Roof Top)</h5>
+                                <h5>Out Door
+                                Game Room</h5>
                                 {/* <p>{service.des2}</p> */}
                             </div>
                         </div>

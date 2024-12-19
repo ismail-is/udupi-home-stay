@@ -17,13 +17,13 @@ const About3 = (props) => {
                     <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="wpo-about-img">
                             <img src={abimg} alt=""/>
-                            <div className="wpo-about-img-text">
+                            {/* <div className="wpo-about-img-text">
                                 <h2>25+</h2>
                                 <p>Years of Experience</p>
                                 <div className="about-shape">
                                     <img src={abimg2} alt=""/>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-12 colsm-12">

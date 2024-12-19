@@ -99,11 +99,11 @@ const WhiteHouse =() => {
 
     // Price Data: Key as month range, value as price
     const prices = {
-      "January-March": 10800,
-      "April-May": 13600,
-      "June-August": 10800,
-      "September-December 20": 13600,
-      "December 20-31": 19950,
+      "January-March": '10,800',
+      "April-May": '13,600',
+      "June-August": '10,800',
+      "September-December 20": '13,600',
+      "December 20-31": '19,950',
     };
   
     // Function to determine current price based on the month
@@ -140,7 +140,7 @@ const WhiteHouse =() => {
                                     
                                         <div className="col-lg-7">
                                             <div className="wpo-project-single-title">
-                                                <h3>Cottage Themed 6-BHK Villa with Fully Furnished</h3>
+                                                <h3>Luxurious High End 7BHK Villa With Fully Furnished</h3>
                                             </div>
                                             <p>This luxurious high-end villa features an Air-conditioned 6 BHK and an additional spacious hall with an attached washroom that comes fully furnished with all the modern amenities you could need.it is conveniently located In the heart of the city just 6 kilometers from Malpe Beach. </p>
                                             <p>Enjoy the fresh morning breeze, the soothing sounds of birds, and a quiet ambiance perfect for relaxation. Whether you're looking for a peaceful getaway or a comfortable home base to explore Udupi, our villa promises a memorable and rejuvenating stay.</p>
@@ -148,9 +148,9 @@ const WhiteHouse =() => {
                                         <div className="col-lg-5">
                                             <div className="wpo-project-single-content-des-right">
                                                 <ul>
-                                                    <li>Property Type :<span>Cottage House</span></li>
+                                                    <li>Property Type :<span>White House</span></li>
                                                     <li>Capacity :<span>30+ Guests</span></li>
-                                                    <li>Rooms :<span>6BHK with A/C</span></li>
+                                                    <li>Rooms :<span>7BHK with A/C</span></li>
                                                     <li>Location :<span> Udupi, Karnataka</span></li>
                                                     <li>Features :<span>Ideal for families and group stays</span></li>
                                                     <li>Facilities :<span>Free Wi-Fi, Fully Equipped Kitchen, Parking</span></li>

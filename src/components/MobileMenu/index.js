@@ -102,7 +102,7 @@ const menus = [
             },
             {
                 id: 46,
-                title: 'CHALET LABONNE ',
+                title: 'CHALET LA BONNE VIE ',
                 link: '/ChaletLabonne'
             },
             {

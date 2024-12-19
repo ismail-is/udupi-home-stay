@@ -101,8 +101,8 @@ const Projects = [
       ps1img:ps1img7,
       psub1img1:psub1img1,
       psub1img2:psub1img2,
-      title:'ViewPoint Oasis ', 
-      subTitle:'ViewPoint Oasis ',  
+      title:'Viewpoint Oasis ', 
+      subTitle:'Viewpoint Oasis ',  
    },
 //     {
 //        Id:'8',

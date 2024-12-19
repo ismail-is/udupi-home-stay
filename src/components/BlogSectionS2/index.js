@@ -62,8 +62,8 @@ const BlogSectionS2 = (props) => {
                                                             <li></li>
                                                             <li>Near Udupi (7 km) & Manipal (15 km)</li>
                                                         </ul>
-                                                        <h2><Link onClick={ClickHandler} to={`/ViewPoint`}>ViewPoint Oasis</Link></h2>
-                                                        <p>Jacuzzi, View Poin, BBQ Area </p>
+                                                        <h2><Link onClick={ClickHandler} to={`/ViewPoint`}>Viewpoint Oasis</Link></h2>
+                                                        <p>Jacuzzi, View Point, BBQ Area </p>
                                                     </div>
                                                 </div>
                                             </div>

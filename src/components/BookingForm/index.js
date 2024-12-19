@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import whatsapp from '../../images/allimg/whatsapp/whatsapp.png';
+import whatsapp1 from '../../images/allimg/whatsapp/whatsapp1.png';
 class BookingForm extends Component {
   state = {
     name: "",
@@ -7,6 +8,15 @@ class BookingForm extends Component {
     subject: "",
     guests: "",
     error: {},
+    villaPrices: {
+      "WHITE HOUSE": { "JANUARY TO MARCH ": 10800, "APRIL TO MAY": 13600, "JUNE TO AUGUST": 10800, "SEPT TO DEC 20TH": 13600, "DEC 20TH TO 31ST DEC": 19950 },
+      "GARDEN VILLA": { "JANUARY TO MARCH ": 9800, "APRIL TO MAY": 12500, "JUNE TO AUGUST": 9800, "SEPT TO DEC 20TH": 12500, "DEC 20TH TO 31ST DEC": 21950 },
+      "COTTAGE HOUSE": { "JANUARY TO MARCH ": 5800 , "APRIL TO MAY": 7500 , "JUNE TO AUGUST": 5800 , "SEPT TO DEC 20TH": 7500 , "DEC 20TH TO 31ST DEC": 11900  },
+      "HILL TOP VILLA": { "JANUARY TO MARCH ": 6200 , "APRIL TO MAY": 7800 , "JUNE TO AUGUST": 6200 , "SEPT TO DEC 20TH": 7800 , "DEC 20TH TO 31ST DEC": 12500  },
+      "SUNRISE HOME": { "JANUARY TO MARCH ": 4800 , "APRIL TO MAY": 6500 , "JUNE TO AUGUST": 4800  , "SEPT TO DEC 20TH": 6500  , "DEC 20TH TO 31ST DEC": 9900   },
+      "CHALET LA BONNE VIE": { "JANUARY TO MARCH ": 12000   , "APRIL TO MAY": 15000  , "JUNE TO AUGUST": 12000 , "SEPT TO DEC 20TH": 15000 , "DEC 20TH TO 31ST DEC": 19500  }
+    },
+    totalPrice: 0
   };
 
   changeHandler = (e) => {
@@ -15,6 +25,22 @@ class BookingForm extends Component {
     this.setState({
       [e.target.name]: e.target.value,
       error,
+    }, this.updateTotalPrice); // Call updateTotalPrice whenever the state changes
+  };
+
+  updateTotalPrice = () => {
+    const { name, lastname, subject, guests } = this.state;
+
+    if (!name || !lastname || !subject || !guests) return;
+
+    const checkinDate = new Date(name);
+    const checkoutDate = new Date(lastname);
+    const nights = (checkoutDate - checkinDate) / (1000 * 60 * 60 * 24);
+    const pricePerNight = this.state.villaPrices[subject][this.getSeason(name)];
+    const totalPrice = pricePerNight * nights ;
+
+    this.setState({
+      totalPrice,
     });
   };
 
@@ -40,12 +66,24 @@ class BookingForm extends Component {
       return;
     }
 
+    const checkinDate = new Date(name);
+    const checkoutDate = new Date(lastname);
+    const nights = (checkoutDate - checkinDate) / (1000 * 60 * 60 * 24);
+    const pricePerNight = this.state.villaPrices[subject][this.getSeason(name)];
+    const totalPrice = pricePerNight * nights ;
+
+    this.setState({
+      totalPrice,
+      error,
+    });
+
     // Construct WhatsApp message
     const message = `Hello, here are my details:
     Check-in Date:    ${name}
     Check-out Date:  ${lastname}
     Choose villa:  ${subject}
-    Number of Guests:  ${guests}`;
+    Number of Guests:  ${guests}
+    Total Price: Rs. ${totalPrice}`;
 
     // WhatsApp Web API URL
     const whatsappURL = `https://wa.me/7483156464?text=${encodeURIComponent(
@@ -65,13 +103,27 @@ class BookingForm extends Component {
     });
   };
 
+  getSeason = (dateString) => {
+    const month = new Date(dateString).getMonth() + 1; // January is 0
+    if (month >= 1 && month <= 3) return "JANUARY TO MARCH ";
+    if (month >= 4 && month <= 5) return "APRIL TO MAY";
+    if (month >= 6 && month <= 8) return "JUNE TO AUGUST";
+    if (month >= 9 && month <= 12) return "SEPT TO DEC 20TH";
+  };
+
   render() {
-    const { name, lastname, subject, guests, error } = this.state;
+    const { name, lastname, subject, guests, error, totalPrice } = this.state;
+    const today = new Date().toISOString().split("T")[0];
+    const minCheckoutDate = name
+      ? new Date(new Date(name).setDate(new Date(name).getDate() + 1))
+          .toISOString()
+          .split("T")[0]
+      : today;
 
     return (
       <div>
         <div className="wpo-contact-title">
-          <h4>book your stay today</h4>
+          <h4>Book your stay today</h4>
         </div>
         <form onSubmit={this.subimtHandler} className="form">
           <div className="row">
@@ -82,6 +134,7 @@ class BookingForm extends Component {
                   onChange={this.changeHandler}
                   type="text"
                   name="name"
+                  min={today}
                   placeholder="Check-in Date"
                   onFocus={(e) => e.target.type = "date"}
                   onBlur={(e) => {
@@ -98,6 +151,7 @@ class BookingForm extends Component {
                   onChange={this.changeHandler}
                   type="text"
                   name="lastname"
+                  min={minCheckoutDate}
                   placeholder="Check-out Date"
                   onFocus={(e) => e.target.type = "date"}
                   onBlur={(e) => {
@@ -134,21 +188,25 @@ class BookingForm extends Component {
                   <option value="COTTAGE HOUSE">COTTAGE HOUSE</option>
                   <option value="HILL TOP VILLA">HILL TOP VILLA</option>
                   <option value="SUNRISE HOME">SUNRISE HOME</option>
+                  <option value="CHALET LA BONNE VIE">CHALET LA BONNE VIE</option>
                 </select>
                 <p>{error.subject}</p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center">
-              <div className="form-field">
-                <button
-                  type="submit"
-                  className="theme-btn"
-                  style={{ borderRadius: "3px" }}
-                >
-                  Send Message
-                </button>
-              </div>
-            </div>
+            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center" >
+  <div className="form-field" >
+    <button
+      type="submit"
+      className="theme-btn d-flex align-items-center"
+      style={{ borderRadius: "3px",height:"55px" }}
+    >
+      <img src={whatsapp1} alt="WhatsApp Icon" style={{ height: "40px", marginRight: "8px" }} />
+      Book Now
+    </button>
+  </div>
+</div>
+
+            <h4 style={{textAlign:"center",marginTop:'30px'}}>Total Price: Rs. {totalPrice}</h4>
           </div>
         </form>
       </div>

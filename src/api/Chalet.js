@@ -10,7 +10,12 @@ import pimg9 from '../images/allimg/chalet/9.webp';
 import pimg10 from '../images/allimg/chalet/10.webp';
 import pimg11 from '../images/allimg/chalet/11.webp';
 import pimg12 from '../images/allimg/chalet/12.webp';
-import pimg13 from '../images/allimg/chalet/13.webp';
+import pimg14 from '../images/allimg/chalet/h1.webp';
+import pimg15 from '../images/allimg/chalet/h2.webp';
+import pimg16 from '../images/allimg/chalet/h3.webp';
+import pimg17 from '../images/allimg/chalet/h4.webp';
+import pimg18 from '../images/allimg/chalet/h5.webp';
+import pimg19 from '../images/allimg/chalet/h6.webp';
 import ps1img1 from '../images/project-single/1.jpg';
 import ps1img2 from '../images/project-single/2.jpg';
 import ps1img3 from '../images/project-single/3.jpg';
@@ -116,6 +121,53 @@ const Chalet = [
         title: 'ARCHITECTURE',
         subTitle: 'Innovative Architecture Design',
     },
+    
+   
+    {
+        Id: '14',
+        pImg: pimg14,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '15',
+        pImg: pimg15,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '16',
+        pImg: pimg16,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '17',
+        pImg: pimg17,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '18',
+        pImg: pimg18,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
     {
         Id: '12',
         pImg: pimg12,
@@ -126,8 +178,8 @@ const Chalet = [
         subTitle: 'Innovative Architecture Design',
     },
     {
-        Id: '13',
-        pImg: pimg13,
+        Id: '19',
+        pImg: pimg19,
         ps1img: ps1img9,
         psub1img1: psub1img1,
         psub1img2: psub1img2,
