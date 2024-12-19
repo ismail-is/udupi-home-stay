@@ -2,9 +2,8 @@ import React, { Component } from "react";
 
 class ViewPointForm extends Component {
   state = {
-    name: "", // Check-in date
-    lastname: "", // Check-out date
-    guests: "",
+    checkInDate: "", // Check-in date
+    numHouses: 0, // Number of houses
     error: {},
     totalPrice: 0,
   };
@@ -18,73 +17,28 @@ class ViewPointForm extends Component {
         error: { ...this.state.error, [name]: "" },
       },
       () => {
-        if (!this.state.name || !this.state.lastname) {
-          this.setState({ totalPrice: 0 });
-        } else {
-          this.calculateTotalPrice();
-        }
+        this.calculateTotalPrice();
       }
     );
   };
 
-  calculatePricePerDay = (date) => {
-    const parsedDate = new Date(date);
-    const month = parsedDate.getMonth() + 1; // Months are 0-indexed
-    const day = parsedDate.getDate();
-
-    // Special pricing for December 20th to 31st
-    if (month === 12 && day >= 20 && day <= 31) return 19950;
-
-    // General pricing
-    if (month >= 1 && month <= 3) return 10800; // Jan to Mar
-    if (month >= 4 && month <= 5) return 13600; // Apr to May
-    if (month >= 6 && month <= 8) return 10800; // Jun to Aug
-    if (month >= 9 && month <= 12) return 13600; // Sep to Nov, Dec (excluding special pricing period)
-
-    return 0;
-  };
-
   calculateTotalPrice = () => {
-    const { name, lastname } = this.state;
-    if (!name || !lastname) return;
+    const { numHouses } = this.state;
 
-    const checkInDate = new Date(name);
-    const checkOutDate = new Date(lastname);
-    if (checkOutDate <= checkInDate) {
-      this.setState({ totalPrice: 0 });
-      return;
-    }
-
-    let totalPrice = 0;
-    let currentDate = new Date(checkInDate);
-
-    while (currentDate < checkOutDate) {
-      totalPrice += this.calculatePricePerDay(currentDate);
-      currentDate.setDate(currentDate.getDate() + 1);
-    }
-
-    this.setState({ totalPrice });
+    // Each house costs Rs. 1000
+    const housePrice = 1000;
+    const total = Math.max(0, numHouses) * housePrice; // Ensure non-negative numbers
+    this.setState({ totalPrice: total });
   };
-
-  componentDidUpdate(_, prevState) {
-    if (
-      (prevState.name !== this.state.name || prevState.lastname !== this.state.lastname) &&
-      this.state.name &&
-      this.state.lastname
-    ) {
-      this.calculateTotalPrice();
-    }
-  }
 
   submitHandler = (e) => {
     e.preventDefault();
-    const { name, lastname, guests, totalPrice } = this.state;
+    const { checkInDate, numHouses, totalPrice } = this.state;
 
     const newError = {};
 
-    if (!name) newError.name = "Please select your check-in date";
-    if (!lastname) newError.lastname = "Please select your check-out date";
-    if (!guests) newError.guests = "Please enter the number of guests";
+    if (!checkInDate) newError.checkInDate = "Please select your check-in date";
+    if (numHouses <= 0) newError.numHouses = "Please select at least one house";
 
     if (Object.keys(newError).length) {
       this.setState({ error: newError });
@@ -92,9 +46,8 @@ class ViewPointForm extends Component {
     }
 
     const message = `Hello, here are my details:
-    Check-in Date: ${name}
-    Check-out Date: ${lastname}
-    Number of Guests: ${guests}
+    Check-in Date: ${checkInDate}
+    Number of Houses: ${numHouses}
     Total Price: Rs. ${totalPrice}`;
 
     const whatsappURL = `https://wa.me/7483156464?text=${encodeURIComponent(
@@ -104,23 +57,17 @@ class ViewPointForm extends Component {
     window.open(whatsappURL, "_blank");
 
     this.setState({
-      name: "",
-      lastname: "",
-      guests: "",
+      checkInDate: "",
+      numHouses: 0,
       error: {},
       totalPrice: 0,
     });
   };
 
   render() {
-    const { name, lastname, guests, error, totalPrice } = this.state;
+    const { checkInDate, numHouses, error, totalPrice } = this.state;
 
     const today = new Date().toISOString().split("T")[0];
-    const minCheckoutDate = name
-      ? new Date(new Date(name).setDate(new Date(name).getDate() + 1))
-          .toISOString()
-          .split("T")[0]
-      : today;
 
     return (
       <div>
@@ -129,62 +76,60 @@ class ViewPointForm extends Component {
         </div>
         <form onSubmit={this.submitHandler} className="form">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-12">
+            {/* Check-in Date */}
+            <div className="col-lg-4 col-md-6 col-12">
               <div className="form-field">
+                <label htmlFor="checkInDate" style={{ fontWeight: "bold" }}>
+                  Check-in Date:
+                </label>
                 <input
-                  value={name}
+                  value={checkInDate}
                   onChange={this.changeHandler}
                   type="date"
-                  name="name"
+                  name="checkInDate"
                   min={today}
-                  placeholder="Check-in Date"
+                  className="form-control"
                   style={{ backgroundColor: "white" }}
                 />
-                <p style={{ color: "red" }}>{error.name}</p>
+                <p style={{ color: "red" }}>{error.checkInDate}</p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-12">
+
+            {/* Number of Houses */}
+            <div className="col-lg-4 col-md-6 col-12">
               <div className="form-field">
+                <label htmlFor="numHouses" style={{ fontWeight: "bold" }}>
+                  Number of Houses:
+                </label>
                 <input
-                  value={lastname}
-                  onChange={this.changeHandler}
-                  type="date"
-                  name="lastname"
-                  min={minCheckoutDate}
-                  placeholder="Check-out Date"
-                  style={{ backgroundColor: "white" }}
-                />
-                <p style={{ color: "red" }}>{error.lastname}</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-12">
-              <div className="form-field">
-                <input
-                  value={guests}
+                  value={numHouses}
                   onChange={this.changeHandler}
                   type="number"
-                  name="guests"
-                  placeholder="No. of Guests"
-                  min="1"
-                  max='30'
+                  name="numHouses"
+                  min="0"
+                  id="numHouses"
+                  className="form-control"
                   style={{ backgroundColor: "white" }}
                 />
-                <p style={{ color: "red" }}>{error.guests}</p>
+                <p style={{ color: "red" }}>{error.numHouses}</p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center">
+
+            {/* Submit Button */}
+            <div className="col-lg-4 col-md-12 col-12 d-flex justify-content-center" style={{marginTop:'20px'}}>
               <div className="form-field">
                 <button
                   type="submit"
                   className="theme-btn"
-                  style={{ borderRadius: "3px" }}
-                  
+                  style={{ padding: "10px 20px", borderRadius: "3px" }}
                 >
-                  Submit
+                  Book Now
                 </button>
               </div>
             </div>
-            <div className="col-lg-12 col-md-12 col-12">
+
+            {/* Total Price */}
+            <div className="col-lg-12 col-md-12 col-12 text-center mt-3">
               <h4>Total Price: Rs. {totalPrice}</h4>
             </div>
           </div>

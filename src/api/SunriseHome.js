@@ -7,7 +7,12 @@ import pimg6 from '../images/allimg/sunrise/6.webp';
 import pimg7 from '../images/allimg/sunrise/7.webp';
 import pimg8 from '../images/allimg/sunrise/8.webp';
 import pimg9 from '../images/allimg/sunrise/9.webp';
-import pimg10 from '../images/allimg/whitehouse/10.webp';
+import pimg10 from '../images/allimg/sunrise/S1.webp';
+import pimg11 from '../images/allimg/sunrise/S2.webp';
+import pimg12 from '../images/allimg/sunrise/S3.webp';
+import pimg13 from '../images/allimg/sunrise/S4.webp';
+import pimg14 from '../images/allimg/sunrise/S5.webp';
+import pimg15 from '../images/allimg/sunrise/S6.webp';
 import ps1img1 from '../images/project-single/1.jpg';
 import ps1img2 from '../images/project-single/2.jpg';
 import ps1img3 from '../images/project-single/3.jpg';
@@ -32,6 +37,15 @@ const SunriseHome = [
         psub1img2: psub1img2,
         title: 'GARDEN VILLA',
         subTitle: 'Garden Paradise',
+    },
+    {
+        Id: '10',
+        pImg: pimg10,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
     },
     {
         Id: '3',
@@ -78,16 +92,54 @@ const SunriseHome = [
         title: 'VIEWPOINT OASIS',
         subTitle: 'Breathtaking Views',
     },
-   
     {
-        Id: '9',
-        pImg: pimg9,
+        Id: '15',
+        pImg: pimg15,
         ps1img: ps1img9,
         psub1img1: psub1img1,
         psub1img2: psub1img2,
         title: 'ARCHITECTURE',
         subTitle: 'Innovative Architecture Design',
     },
+  
+   
+    {
+        Id: '11',
+        pImg: pimg11,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '12',
+        pImg: pimg12,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '13',
+        pImg: pimg13,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    {
+        Id: '14',
+        pImg: pimg14,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    
    
 ];
 

@@ -69,11 +69,11 @@ const ViewPointBook = () => {
     const classes = useStyles();
     // Price Data: Key as month range, value as price
   const prices = {
-    "January-March": "10,800",
-    "April-May": "13,600",
-    "June-August": "10,800",
-    "September-December 20": "13,600",
-    "December 20-31": "19,950",
+    "January-March": "1,000",
+    "April-May": "1,000",
+    "June-August": "1,000",
+    "September-December 20": "1,000",
+    "December 20-31": "1,000",
   };
 
   // Function to determine current price based on the month

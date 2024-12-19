@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import whatsapp1 from '../../images/allimg/whatsapp/whatsapp1.png';
 class WhiteVillaForm extends Component {
   state = {
     name: "", // Check-in date
@@ -197,7 +197,8 @@ class WhiteVillaForm extends Component {
                   className="theme-btn"
                   style={{ borderRadius: "3px" }}
                 >
-                  Submit
+                  
+                  Book Now
                 </button>
               </div>
             </div>

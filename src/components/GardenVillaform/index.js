@@ -180,7 +180,7 @@ class GardenVillaform extends Component {
                   style={{ borderRadius: "3px" }}
                   
                 >
-                  Submit
+                  Book Now
                 </button>
               </div>
             </div>
