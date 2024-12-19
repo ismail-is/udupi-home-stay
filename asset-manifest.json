@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/udupi-home-stay/static/css/main.8f10cfca.css",
-    "main.js": "/udupi-home-stay/static/js/main.7b58b10c.js",
+    "main.js": "/udupi-home-stay/static/js/main.c78416ea.js",
     "static/js/787.884f7618.chunk.js": "/udupi-home-stay/static/js/787.884f7618.chunk.js",
     "static/media/Viewpoint.webp": "/udupi-home-stay/static/media/Viewpoint.77a2192cb1bf0f0347c9.webp",
     "static/media/aboutpage.webp": "/udupi-home-stay/static/media/aboutpage.bb766861ed8c48c8642f.webp",
@@ -32,6 +32,7 @@
     "static/media/Garden .webp": "/udupi-home-stay/static/media/Garden .f468434aa31108ea02dc.webp",
     "static/media/Viewpoint1.webp": "/udupi-home-stay/static/media/Viewpoint1.49f2870513be5b42d803.webp",
     "static/media/Vector3.png": "/udupi-home-stay/static/media/Vector3.3fa86e091ff0980e518c.png",
+    "static/media/h7.webp": "/udupi-home-stay/static/media/h7.4013302efbf90756762c.webp",
     "static/media/Vector4.png": "/udupi-home-stay/static/media/Vector4.83778fb912b0576460c8.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/udupi-home-stay/static/media/fontawesome-webfont.f7f1738ca345185e0185.woff",
     "static/media/Sunrise.webp": "/udupi-home-stay/static/media/Sunrise.db4034624efa50a1dc93.webp",
@@ -42,9 +43,9 @@
     "static/media/themify.ttf?-fvbane": "/udupi-home-stay/static/media/themify.eda8b94308c6f538f04a.ttf",
     "static/media/fontawesome-webfont.eot": "/udupi-home-stay/static/media/fontawesome-webfont.09b9015b1ecaf95655b1.eot",
     "static/media/18.webp": "/udupi-home-stay/static/media/18.ce03fecd12dee3cd3b06.webp",
+    "static/media/h6.webp": "/udupi-home-stay/static/media/h6.c5b6bc14da812c778b8d.webp",
     "static/media/homeabout.webp": "/udupi-home-stay/static/media/homeabout.4d97b3024586a1bb42ae.webp",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/udupi-home-stay/static/media/fontawesome-webfont.0317d582b93c20f68e05.woff2",
-    "static/media/13.webp": "/udupi-home-stay/static/media/13.c39771a2b1ce562285bb.webp",
     "static/media/17.webp": "/udupi-home-stay/static/media/17.a54f4a74113719bcc350.webp",
     "static/media/5.webp": "/udupi-home-stay/static/media/5.a45dc6176b4a2cfe800d.webp",
     "static/media/4.webp": "/udupi-home-stay/static/media/4.988344b9b6245e9388cb.webp",
@@ -55,18 +56,25 @@
     "static/media/themify.woff?-fvbane": "/udupi-home-stay/static/media/themify.29b39089170885ae2967.woff",
     "static/media/Vector2.png": "/udupi-home-stay/static/media/Vector2.09f810ca3b7138e4ec0c.png",
     "static/media/16.webp": "/udupi-home-stay/static/media/16.45b382676d2ec5152c56.webp",
+    "static/media/h8.webp": "/udupi-home-stay/static/media/h8.2d8060e4445b3830898a.webp",
     "static/media/HillTop.webp": "/udupi-home-stay/static/media/HillTop.7cb1cbb35006514d4aa6.webp",
     "static/media/about-shape3.png": "/udupi-home-stay/static/media/about-shape3.c5ef5c6457770fe0164a.png",
     "static/media/9.webp": "/udupi-home-stay/static/media/9.33670d1b643439c1ba5c.webp",
     "static/media/7.webp": "/udupi-home-stay/static/media/7.a10e8c8c1f1c15e5c7c7.webp",
     "static/media/CateringHome.webp": "/udupi-home-stay/static/media/CateringHome.bec7b8496d92d00fb1b3.webp",
+    "static/media/h1.webp": "/udupi-home-stay/static/media/h1.aa8550bc68c7c30ba5f6.webp",
     "static/media/8.webp": "/udupi-home-stay/static/media/8.acbb076f3043ae55a2bd.webp",
+    "static/media/h5.webp": "/udupi-home-stay/static/media/h5.9795da6551ad361fae97.webp",
     "static/media/6.webp": "/udupi-home-stay/static/media/6.46492b1e345eb5c84bdd.webp",
+    "static/media/h3.webp": "/udupi-home-stay/static/media/h3.3c5d5ecaa695d965a107.webp",
     "static/media/Muli-Bold.woff": "/udupi-home-stay/static/media/Muli-Bold.14e4b6420c2efbb19edd.woff",
     "static/media/Muli-Regular.woff": "/udupi-home-stay/static/media/Muli-Regular.1097f30cacc100fa75f3.woff",
     "static/media/Muli-SemiBold.woff": "/udupi-home-stay/static/media/Muli-SemiBold.e4511dae91686ad50116.woff",
+    "static/media/h2.webp": "/udupi-home-stay/static/media/h2.3fe2a5703716da78c98c.webp",
     "static/media/Chalet.webp": "/udupi-home-stay/static/media/Chalet.425eed802c9783ffff00.webp",
+    "static/media/h4.webp": "/udupi-home-stay/static/media/h4.cf191777da67c7d40998.webp",
     "static/media/bg.png": "/udupi-home-stay/static/media/bg.1eabf87e9fe42166556e.png",
+    "static/media/13.webp": "/udupi-home-stay/static/media/13.c39771a2b1ce562285bb.webp",
     "static/media/11.webp": "/udupi-home-stay/static/media/11.4cdbc8ca82026eaaf73a.webp",
     "static/media/greenlogo.webp": "/udupi-home-stay/static/media/greenlogo.c6229046924070069bad.webp",
     "static/media/udpi.webp": "/udupi-home-stay/static/media/udpi.7f16525c3d967541a790.webp",
@@ -88,11 +96,11 @@
     "static/media/slick.woff": "/udupi-home-stay/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/udupi-home-stay/index.html",
     "main.8f10cfca.css.map": "/udupi-home-stay/static/css/main.8f10cfca.css.map",
-    "main.7b58b10c.js.map": "/udupi-home-stay/static/js/main.7b58b10c.js.map",
+    "main.c78416ea.js.map": "/udupi-home-stay/static/js/main.c78416ea.js.map",
     "787.884f7618.chunk.js.map": "/udupi-home-stay/static/js/787.884f7618.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f10cfca.css",
-    "static/js/main.7b58b10c.js"
+    "static/js/main.c78416ea.js"
   ]
 }
