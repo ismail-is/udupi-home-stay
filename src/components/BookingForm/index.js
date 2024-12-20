@@ -78,7 +78,7 @@ class BookingForm extends Component {
     });
 
     // Construct WhatsApp message
-    const message = `Hello, here are my details:
+    const message = `Hello,
     Check-in Date:    ${name}
     Check-out Date:  ${lastname}
     Choose villa:  ${subject}

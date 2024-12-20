@@ -45,12 +45,12 @@ class ViewPointForm extends Component {
       return;
     }
 
-    const message = `Hello, here are my details:
+    const message = `Hello,Book VIEWPOINT OASIS For,
     Check-in Date: ${checkInDate}
-    Number of Houses: ${numHouses}
+    Number of Hours: ${numHouses}
     Total Price: Rs. ${totalPrice}`;
 
-    const whatsappURL = `https://wa.me/7483156464?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+918971220576?text=${encodeURIComponent(
       message
     )}`;
 

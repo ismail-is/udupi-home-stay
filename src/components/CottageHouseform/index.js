@@ -91,13 +91,13 @@ class CottageHouseform extends Component {
       return;
     }
 
-    const message = `Hello, here are my details:
+    const message = `Hello,Book COTTAGE HOUSE For
     Check-in Date: ${name}
     Check-out Date: ${lastname}
     Number of Guests: ${guests}
     Total Price: Rs. ${totalPrice}`;
 
-    const whatsappURL = `https://wa.me/7483156464?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+918971220576?text=${encodeURIComponent(
       message
     )}`;
 
