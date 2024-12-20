@@ -141,7 +141,7 @@ const GardenVilla =() => {
                                     
                                         <div className="col-lg-7">
                                             <div className="wpo-project-single-title">
-                                                <h3>Garden Themed 5-BHK Villa with Fully Furnished
+                                                <h3>Garden Themed 5-BHK Fully Furnished Villa
                                                 </h3>
                                             </div>
                                             <p>This exquisite garden-themed villa offers a serene and luxurious escape with 5 spacious  bedrooms with air-condition. Fully furnished with modern amenities, it guarantees a comfortable and enjoyable stay. Located just 6 kilometers from both Udupi and Malpe Beach, the villa is surrounded by lush greenery, creating a peaceful and private atmosphere. </p>

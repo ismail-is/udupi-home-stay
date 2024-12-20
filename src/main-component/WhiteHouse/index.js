@@ -140,7 +140,7 @@ const WhiteHouse =() => {
                                     
                                         <div className="col-lg-7">
                                             <div className="wpo-project-single-title">
-                                                <h3>Luxurious High End 7BHK Villa With Fully Furnished</h3>
+                                                <h3>Luxurious High-End 7BHK Fully Furnished Villa</h3>
                                             </div>
                                             <p>This luxurious high-end villa features an Air-conditioned 6 BHK and an additional spacious hall with an attached washroom that comes fully furnished with all the modern amenities you could need.it is conveniently located In the heart of the city just 6 kilometers from Malpe Beach. </p>
                                             <p>Enjoy the fresh morning breeze, the soothing sounds of birds, and a quiet ambiance perfect for relaxation. Whether you're looking for a peaceful getaway or a comfortable home base to explore Udupi, our villa promises a memorable and rejuvenating stay.</p>

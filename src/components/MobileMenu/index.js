@@ -212,6 +212,11 @@ const menus = [
     // },
     {
         id: 88,
+        title: 'Caterings',
+        link: '/Catering',
+    },
+    {
+        id: 89,
         title: 'Contact',
         link: '/contact',
     }

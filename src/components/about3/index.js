@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import VideoModal from '../../components/ModalVideo'
-import abimg from '../../images/allimg/Catering/Catering.webp'
+import abimg from '../../images/allimg/Catering/Caterings.webp'
 import abimg2 from '../../images/about-shape.jpg'
 
 
@@ -14,7 +14,7 @@ const About3 = (props) => {
         <div className="wpo-about-area-s3 section-padding">
             <div className="container-fluid">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12" >
                         <div className="wpo-about-img">
                             <img src={abimg} alt=""/>
                             {/* <div className="wpo-about-img-text">
@@ -26,7 +26,7 @@ const About3 = (props) => {
                             </div> */}
                         </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-12 colsm-12">
+                    <div className="col-xl-6 col-lg-6 col-md-12 colsm-12" style={{marginTop:'-80px'}}>
                         <div className="wpo-about-text">
                             {/* <h1>About Us</h1> */}
                             <div className="wpo-about-title">
