@@ -7,7 +7,11 @@ import pimg6 from '../images/allimg/view/6.webp';
 import pimg7 from '../images/allimg/view/7.webp';
 import pimg8 from '../images/allimg/view/8.webp';
 import pimg9 from '../images/allimg/view/9.webp';
-import pimg10 from '../images/allimg/view/10.webp';
+// import pimg10 from '../images/allimg/view/10.webp';
+import pimg11 from '../images/allimg/view/V1.webp';
+import pimg12 from '../images/allimg/view/V2.webp';
+import pimg13 from '../images/allimg/view/V3.webp';
+import pimg14 from '../images/allimg/view/V4.webp';
 import ps1img1 from '../images/project-single/1.jpg';
 import ps1img2 from '../images/project-single/2.jpg';
 import ps1img3 from '../images/project-single/3.jpg';
@@ -30,6 +34,15 @@ const View = [
         psub1img2: psub1img2,
         title: 'WHITE HOUSE',
         subTitle: 'Luxury Villa in Udupi',
+    },
+    {
+        Id: '11',
+        pImg: pimg11,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
     },
     {
         Id: '2',
@@ -97,6 +110,26 @@ const View = [
     {
         Id: '9',
         pImg: pimg9,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+      
+    {
+        Id: '12',
+        pImg: pimg12,
+        ps1img: ps1img9,
+        psub1img1: psub1img1,
+        psub1img2: psub1img2,
+        title: 'ARCHITECTURE',
+        subTitle: 'Innovative Architecture Design',
+    },
+    
+    {
+        Id: '14',
+        pImg: pimg14,
         ps1img: ps1img9,
         psub1img1: psub1img1,
         psub1img2: psub1img2,

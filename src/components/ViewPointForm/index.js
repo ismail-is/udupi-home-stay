@@ -99,7 +99,7 @@ class ViewPointForm extends Component {
             <div className="col-lg-4 col-md-6 col-12">
               <div className="form-field">
                 <label htmlFor="numHouses" style={{ fontWeight: "bold" }}>
-                  Number of Houses:
+                  Number Of Hour:
                 </label>
                 <input
                   value={numHouses}
