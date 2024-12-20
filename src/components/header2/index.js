@@ -152,7 +152,7 @@ export default class Header2 extends Component {
                                                                 <ul>
                                                                     <li><i className="fi flaticon-location"></i>H.No. 4-4-95, Bhaghat
                                                                     Singh Marg,Udupi 576101</li>
-                                                                    <li><i className="fi flaticon-telephone"></i>+ +91 89712 20576<br />
+                                                                    <li><i className="fi flaticon-telephone"></i>+91 89712 20576<br />
                                                                     +91 80501 23132</li>
                                                                     <li><i className="fi flaticon-email"></i>fahad@udupistay.com <br/>
                                                                     asif@udupistay.com</li> 
