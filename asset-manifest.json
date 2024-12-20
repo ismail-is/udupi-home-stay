@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/udupi-home-stay/static/css/main.8f10cfca.css",
-    "main.js": "/udupi-home-stay/static/js/main.e8e77520.js",
+    "main.js": "/udupi-home-stay/static/js/main.0aeec049.js",
     "static/js/787.884f7618.chunk.js": "/udupi-home-stay/static/js/787.884f7618.chunk.js",
+    "static/media/Caterings.webp": "/udupi-home-stay/static/media/Caterings.4c4a78bdf051e6c40bff.webp",
     "static/media/Viewpoint.webp": "/udupi-home-stay/static/media/Viewpoint.77a2192cb1bf0f0347c9.webp",
     "static/media/aboutpage.webp": "/udupi-home-stay/static/media/aboutpage.bb766861ed8c48c8642f.webp",
     "static/media/1.webp": "/udupi-home-stay/static/media/1.50b0d6693ad9905f28ef.webp",
@@ -11,7 +12,6 @@
     "static/media/10.webp": "/udupi-home-stay/static/media/10.11d490f181050ba3ebaa.webp",
     "static/media/view.webp": "/udupi-home-stay/static/media/view.16fcf0e003e23b2aec5e.webp",
     "static/media/one.jpg": "/udupi-home-stay/static/media/one.f1dd8752ce6b2ebe48a1.jpg",
-    "static/media/Catering.webp": "/udupi-home-stay/static/media/Catering.e4065b85fa9d21fc73b6.webp",
     "static/media/whiteHouse.webp": "/udupi-home-stay/static/media/whiteHouse.b9ede7a738a4d5ec4952.webp",
     "static/media/project.webp": "/udupi-home-stay/static/media/project.3b09b36b58071baa069b.webp",
     "static/media/sunrise.webp": "/udupi-home-stay/static/media/sunrise.5eccc03eb056f5920a50.webp",
@@ -106,11 +106,11 @@
     "static/media/slick.woff": "/udupi-home-stay/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/udupi-home-stay/index.html",
     "main.8f10cfca.css.map": "/udupi-home-stay/static/css/main.8f10cfca.css.map",
-    "main.e8e77520.js.map": "/udupi-home-stay/static/js/main.e8e77520.js.map",
+    "main.0aeec049.js.map": "/udupi-home-stay/static/js/main.0aeec049.js.map",
     "787.884f7618.chunk.js.map": "/udupi-home-stay/static/js/787.884f7618.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f10cfca.css",
-    "static/js/main.e8e77520.js"
+    "static/js/main.0aeec049.js"
   ]
 }
