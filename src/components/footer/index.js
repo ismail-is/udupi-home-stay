@@ -36,7 +36,7 @@ const Footer = (props) =>{
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/https://www.youtube.com/@udupistay" target='blank'>
+                                    <a href="https://www.youtube.com/@udupistay" target='blank'>
                                         <i className="ti-youtube"></i>
                                     </a>
                                 </li>
