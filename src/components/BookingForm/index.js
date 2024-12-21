@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import whatsapp from '../../images/allimg/whatsapp/whatsapp.png';
 import whatsapp1 from '../../images/allimg/whatsapp/whatsapp1.png';
+
 class BookingForm extends Component {
   state = {
     name: "",
@@ -20,12 +20,21 @@ class BookingForm extends Component {
   };
 
   changeHandler = (e) => {
+    const { name, value } = e.target;
     const error = this.state.error;
-    error[e.target.name] = "";
-    this.setState({
-      [e.target.name]: e.target.value,
-      error,
-    }, this.updateTotalPrice); // Call updateTotalPrice whenever the state changes
+
+    if (name === "lastname" && this.state.name) {
+      const checkinDate = new Date(this.state.name);
+      const checkoutDate = new Date(value);
+
+      if (checkoutDate <= checkinDate) {
+        alert("Checkout date cannot be before or the same as the check-in date.");
+        return; // Prevents updating the state if invalid
+      }
+    }
+
+    error[name] = ""; // Clear error for the current field
+    this.setState({ [name]: value, error }, this.updateTotalPrice);
   };
 
   updateTotalPrice = () => {
@@ -37,7 +46,7 @@ class BookingForm extends Component {
     const checkoutDate = new Date(lastname);
     const nights = (checkoutDate - checkinDate) / (1000 * 60 * 60 * 24);
     const pricePerNight = this.state.villaPrices[subject][this.getSeason(name)];
-    const totalPrice = pricePerNight * nights ;
+    const totalPrice = pricePerNight * nights;
 
     this.setState({
       totalPrice,
@@ -70,30 +79,26 @@ class BookingForm extends Component {
     const checkoutDate = new Date(lastname);
     const nights = (checkoutDate - checkinDate) / (1000 * 60 * 60 * 24);
     const pricePerNight = this.state.villaPrices[subject][this.getSeason(name)];
-    const totalPrice = pricePerNight * nights ;
+    const totalPrice = pricePerNight * nights;
 
     this.setState({
       totalPrice,
       error,
     });
 
-    // Construct WhatsApp message
-    const message = `Hello,
+    const message = `Hello, 
     Check-in Date:    ${name}
     Check-out Date:  ${lastname}
     Choose villa:  ${subject}
     Number of Guests:  ${guests}
     Total Price: Rs. ${totalPrice}`;
 
-    // WhatsApp Web API URL
-    const whatsappURL = `https://wa.me/7483156464?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+918971220576?text=${encodeURIComponent(
       message
     )}`;
 
-    // Redirect to WhatsApp
     window.open(whatsappURL, "_blank");
 
-    // Reset form
     this.setState({
       name: "",
       lastname: "",
@@ -104,7 +109,7 @@ class BookingForm extends Component {
   };
 
   getSeason = (dateString) => {
-    const month = new Date(dateString).getMonth() + 1; // January is 0
+    const month = new Date(dateString).getMonth() + 1;
     if (month >= 1 && month <= 3) return "JANUARY TO MARCH ";
     if (month >= 4 && month <= 5) return "APRIL TO MAY";
     if (month >= 6 && month <= 8) return "JUNE TO AUGUST";
@@ -129,14 +134,16 @@ class BookingForm extends Component {
           <div className="row">
             <div className="col-lg-2 col-md-6 col-6">
               <div className="form-field">
+                <label htmlFor="checkin-date" style={{textAlign:'center',display:"block",color:'#0d0845'}}>Check-in Date</label>
                 <input
+                  id="checkin-date"
                   value={name}
                   onChange={this.changeHandler}
-                  type="text"
+                  type="date"
                   name="name"
                   min={today}
                   placeholder="Check-in Date"
-                  onFocus={(e) => e.target.type = "date"}
+                  onFocus={(e) => (e.target.type = "date")}
                   onBlur={(e) => {
                     if (!e.target.value) e.target.type = "text";
                   }}
@@ -146,14 +153,16 @@ class BookingForm extends Component {
             </div>
             <div className="col-lg-2 col-md-6 col-6">
               <div className="form-field">
+                <label htmlFor="checkout-date" style={{textAlign:'center',display:"block",color:'#0d0845'}}>Check-out Date</label>
                 <input
+                  id="checkout-date"
                   value={lastname}
                   onChange={this.changeHandler}
-                  type="text"
+                  type="date"
                   name="lastname"
                   min={minCheckoutDate}
                   placeholder="Check-out Date"
-                  onFocus={(e) => e.target.type = "date"}
+                  onFocus={(e) => (e.target.type = "date")}
                   onBlur={(e) => {
                     if (!e.target.value) e.target.type = "text";
                   }}
@@ -161,7 +170,7 @@ class BookingForm extends Component {
                 <p>{error.lastname}</p>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-6">
+            <div className="col-lg-2 col-md-6 col-6" style={{ marginTop: "20px" }}>
               <div className="form-field">
                 <input
                   value={guests}
@@ -174,7 +183,7 @@ class BookingForm extends Component {
                 <p>{error.guests}</p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-6">
+            <div className="col-lg-3 col-md-6 col-6" style={{ marginTop: "20px" }}>
               <div className="form-field">
                 <select
                   className="form-control"
@@ -193,20 +202,20 @@ class BookingForm extends Component {
                 <p>{error.subject}</p>
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center" >
-  <div className="form-field" >
-    <button
-      type="submit"
-      className="theme-btn d-flex align-items-center"
-      style={{ borderRadius: "3px",height:"55px" }}
-    >
-      <img src={whatsapp1} alt="WhatsApp Icon" style={{ height: "40px", marginRight: "8px" }} />
-      Book Now
-    </button>
-  </div>
-</div>
+            <div className="col-lg-3 col-md-12 col-12 d-flex justify-content-center" style={{ marginTop: "20px" }}>
+              <div className="form-field">
+                <button
+                  type="submit"
+                  className="theme-btn d-flex align-items-center"
+                  style={{ borderRadius: "3px", height: "55px" }}
+                >
+                  <img src={whatsapp1} alt="WhatsApp Icon" style={{ height: "40px", marginRight: "8px" }} />
+                  Book Now
+                </button>
+              </div>
+            </div>
 
-            <h4 style={{textAlign:"center",marginTop:'30px'}}>Total Price: Rs. {totalPrice}</h4>
+            <h4 style={{ textAlign: "center", marginTop: "30px" }}>Total Price: Rs. {totalPrice}</h4>
           </div>
         </form>
       </div>

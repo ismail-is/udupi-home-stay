@@ -30,6 +30,7 @@ import GardenImg from '../../components/GardenImg';
 import green from '../../images/allimg/HomeSlider/green.webp'
 import img1 from '../../images/allimg/HomeSlider/green.webp'
 import { makeStyles } from "@material-ui/core";
+import GardenVillaVideo from '../../components/GardenVillaVideo';
 
 
 
@@ -257,7 +258,7 @@ const GardenVilla =() => {
                                     <Discuss/> */}
 
 
-<BlogList/>
+<GardenVillaVideo/>
 
                                 </div>
                             </div>
